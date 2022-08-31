@@ -7,43 +7,46 @@
 .header { 
     grid-area: header;
     background-color: #2e3440;
-    outline-style: solid;
-    outline-color: #000000;
-    padding-top: 20px;
+    padding: 15px;
     font-weight: 800;
+    font-family: "Poppins";
+}
+
+#menutext {
+    display: inline-block;
+    text-align: left;
 }
 
 .menu {
     grid-area: menu;
-    background-color: #5e81ac;
-    outline-style: solid;
-    outline-color: #000000;
-    padding: 15px;
-    line-height: 30px;
+    background-color:#3b4252;
+    padding: 25px;
+    line-height: 33px;
+    justify-items: center;
 }
 
 .main {
     grid-area: main;
-    background-color: #81a1c1;
-    outline-style: solid;
-    outline-color: #000000;
+    background-color:#4c566a;
     padding: 15px;
+    font-size: 22px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-areas: 
-        'header header header header'
-        'menu main main main'
-        'menu main main main'
-        'menu main main main'
-        'menu main main main'
-        'menu main main main'
-        'menu main main main';
+    grid-template: 
+        'header header header header' min-content
+        'menu main main main' auto
+        / 25% 75%;
     font-size: 25px;
     text-align: center;
     color:#f8f8ff;
     font-family: "Poppins";
-    width: 98vw;
-    height: 97vh;
+    width: auto;
+    height: auto;
+    margin: 0%;
+}
+
+a {
+    color:#f8f8ff;
 }
