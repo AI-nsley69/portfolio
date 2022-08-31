@@ -1,0 +1,49 @@
+#header-text {
+    float: left;
+    margin-left: 20%;
+    color:#f8f8ff;
+}
+
+.header { 
+    grid-area: header;
+    background-color: #2e3440;
+    outline-style: solid;
+    outline-color: #000000;
+    padding-top: 20px;
+    font-weight: 800;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #5e81ac;
+    outline-style: solid;
+    outline-color: #000000;
+    padding: 15px;
+    line-height: 30px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #81a1c1;
+    outline-style: solid;
+    outline-color: #000000;
+    padding: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'menu main main main'
+        'menu main main main'
+        'menu main main main'
+        'menu main main main'
+        'menu main main main'
+        'menu main main main';
+    font-size: 25px;
+    text-align: center;
+    color:#f8f8ff;
+    font-family: "Poppins";
+    width: 98vw;
+    height: 97vh;
+}
