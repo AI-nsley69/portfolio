@@ -1,7 +1,7 @@
-#header-text {
-    float: left;
-    margin-left: 20%;
-    color:#f8f8ff;
+header nav {
+    display: flex;
+    justify-content: space-around;
+    color: #f8f8ff;
 }
 
 .header { 
