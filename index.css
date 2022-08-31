@@ -4,7 +4,7 @@ header nav {
     color: #f8f8ff;
 }
 
-.header { 
+header { 
     grid-area: header;
     background-color: #2e3440;
     padding: 15px;
@@ -12,34 +12,30 @@ header nav {
     font-family: "Poppins";
 }
 
-#menutext {
-    display: inline-block;
-    text-align: left;
-}
-
-.menu {
+menu {
     grid-area: menu;
-    background-color:#3b4252;
+    background-color: #3b4252;
     padding: 25px;
     line-height: 33px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.main {
+main {
     grid-area: main;
-    background-color:#4c566a;
+    background-color: #4c566a;
     padding: 15px;
     font-size: 22px;
+    text-align: center;
 }
 
-.grid-container {
+body {
     display: grid;
     grid-template: 
         'header header header header' min-content
         'menu main main main' auto
         / 25% 75%;
     font-size: 25px;
-    text-align: center;
     color:#f8f8ff;
     font-family: "Poppins";
     width: auto;
