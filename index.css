@@ -4,11 +4,27 @@ header nav {
     color: #f8f8ff;
 }
 
+header a {
+    color: #f8f8ff;
+    text-decoration: none;
+    transition: .2s ease-in-out 0s;
+}
+
+header a:active {
+    color: dimgrey;
+    font-weight: bold;
+    transform: scale(0.98);
+}
+
+header a:hover {
+    transform: scale(1.02);
+}
+
 header { 
     grid-area: header;
     background-color: #2e3440;
     padding: 15px;
-    font-weight: 800;
+    font-weight: 600;
     font-family: "Poppins";
 }
 
@@ -60,7 +76,7 @@ body {
     width: auto;
     height: auto;
     min-height: 100vh;
-    margin: 0%;
+    margin: 0;
 }
 
 a {
