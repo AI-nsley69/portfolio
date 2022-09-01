@@ -39,12 +39,19 @@ footer img {
     margin-left: 4px;
 }
 
+.footertext {
+    text-align: left;
+}
+
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-area: footer;
     background-color: #3b4252;
-    text-align: left;
-    padding: 5px;
-    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    line-height: 0px;
+    font-size: 18px;
 }
 
 main {
