@@ -28,15 +28,6 @@ header {
     font-family: "Poppins";
 }
 
-.menu {
-    grid-area: menu;
-    background-color: #3b4252;
-    padding: 25px;
-    line-height: 33px;
-    display: flex;
-    justify-content: center;
-}
-
 footer nav {
     text-align: right;
 }
