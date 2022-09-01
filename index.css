@@ -21,6 +21,24 @@ header {
     justify-content: center;
 }
 
+footer nav {
+    text-align: right;
+}
+
+footer img {
+    height: 28px;
+    width: 28px;
+    margin-left: 4px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #3b4252;
+    text-align: left;
+    padding: 5px;
+    font-size: 12px;
+}
+
 main {
     grid-area: main;
     background-color: #4c566a;
@@ -33,7 +51,8 @@ body {
     display: grid;
     grid-template: 
         'header header header header' min-content
-        'menu main main main' auto
+        'main main main main' auto
+        'footer footer footer footer' min-content
         / 25% 75%;
     font-size: 25px;
     color:#f8f8ff;
