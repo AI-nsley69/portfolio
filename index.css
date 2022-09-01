@@ -14,6 +14,7 @@ header a:active {
     color: dimgrey;
     font-weight: bold;
     transform: scale(0.98);
+    transition: .3s ease-in-out 0s;
 }
 
 header a:hover {
