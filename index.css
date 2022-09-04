@@ -54,6 +54,13 @@ footer {
     font-size: 18px;
 }
 
+main h4 {
+    line-height: 0px;
+    font-weight: 700;
+    font-style: italic;
+    color: #dcdcdc;
+}
+
 main {
     grid-area: main;
     background-color: #4c566a;

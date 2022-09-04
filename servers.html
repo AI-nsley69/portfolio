@@ -17,24 +17,29 @@
     </header>
     <body>
         <main>
-            <h3>Homelab</h3>
+            <h2>Homelab</h2>
+            <h4>Hardware</h4>
             <p>My homelab is a HP DL380P Generation 8 server powered by 2x Intel Xeon E5-2680 and 32GB DDR3 ECC.
                 Due to some issues with the consumer harddrives on it, the iLO firmware is hacked to allow for fancontrol
-                through a <a href="https://github.com/AI-nsley69/siLO">script</a> I made myself to keep the fans low due to the environment it is in. 
+                through a <a href="https://github.com/AI-nsley69/siLO">script</a> I made myself to keep the fans low due to the environment it is in.
+            </p>
+            <h4>Setup</h4>
+            <p> 
                 Powered by Proxmox as the Operating System, it is using LXC to containerize as many services as possible, with all containers
                 running in their own subnet behind <a href="https://www.pfsense.org/">pfsense</a>. This lets me tighten the forwarding rules, 
                 use vpn as gateways for certain services that I do not want the request to come from my public ip, scanning packets to prevent any 
                 intrustion attacks with <a href="https://www.snort.org/">Snort</a> & <a href="http://www.squid-cache.org/">Squid Proxy</a> to cache requests
                 and scan downloads for malicious content with <a href="https://www.clamav.net/">ClamAV</a>.
                 The services are not exposed directly, but through a reverse proxy done with <a href="https://caddyserver.com/">Caddy</a> 
-                for automatic SSL certificates and using multiple services with one port (443 specifically) through subdomains. 
+                for automatic SSL certificates and using multiple services with one port (443 specifically) through subdomains.
+            </p> 
+            <h4>Services</h4>
+            <p>
                 Some services include my own git server with the <a href="https://gitea.io/en-us/">Gitea</a> application, 
                 my own Bitwarden instance with <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a> as the implementation for the backend, 
                 <a href="https://jellyfin.org/">Jellyfin</a> as a media for all of my media needs, 
                 <a href="https://jellyfin.org/">Jenkins</a> as build server to compile my own software and other self-hosted software like Vaultwarden 
                 and my own wiki with <a href="https://js.wiki/">Wiki.js</a> to document the majority of things I do and how I setup stuff.
-
-            </p>
             </p>
         </main>
     </body>
