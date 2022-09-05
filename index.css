@@ -54,8 +54,8 @@ footer {
     font-size: 18px;
 }
 
-main a {
-    color: #EDEDED;
+.portfolio a {
+    color: #faebd7;
     font-weight: bolder;
 }
 
