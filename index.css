@@ -54,11 +54,20 @@ footer {
     font-size: 18px;
 }
 
+main a {
+    color: #EDEDED;
+    font-weight: bolder;
+}
+
 main h4 {
     line-height: 0px;
     font-weight: 700;
     font-style: italic;
     color: #dcdcdc;
+}
+
+main p {
+    margin-bottom: 30px;
 }
 
 main {
@@ -67,6 +76,7 @@ main {
     padding: 15px;
     font-size: 22px;
     text-align: center;
+    line-height: 1.2;
 }
 
 body {
