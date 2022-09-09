@@ -104,7 +104,6 @@ main {
     line-height: 1.2;
     font-family: "Quicksand";
     font-weight: 500;
-    /* scrollbar-track-color: #2e3440; */
 }
 
 body {
@@ -114,13 +113,13 @@ body {
         'main main main main' auto
         'footer footer footer footer' min-content
         / 25% 75%;
-    font-size: 25px;
-    color:#f8f8ff;
-    font-family: "Poppins";
     width: auto;
     height: auto;
     min-height: 100vh;
     margin: 0;
+    font-size: 25px;
+    color:#f8f8ff;
+    font-family: "Poppins";
 }
 
 a {
@@ -130,6 +129,7 @@ a {
 html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
