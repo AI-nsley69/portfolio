@@ -23,6 +23,8 @@ header a:hover {
 }
 
 header { 
+    position: sticky;
+    top: 0px;
     grid-area: header;
     background-color: #2e3440;
     padding: 15px;
@@ -45,6 +47,8 @@ footer img {
 }
 
 footer {
+    position: sticky;
+    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
