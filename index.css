@@ -120,7 +120,7 @@ main img {
     margin: 0 auto;
     white-space: nowrap;
     animation: 
-        typing 1.2s steps(30, end),
+        typing 1.5s steps(30, end),
         blink-caret .75s step-end infinite;
 }
 
