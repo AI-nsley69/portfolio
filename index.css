@@ -95,6 +95,10 @@ main h4 {
     transform: scaleX(1);
 }
 
+main h2, h3, h4 {
+    text-shadow: 1px 1.5px #0000005e;
+}
+
 main p {
     margin-bottom: 40px;
 }
@@ -102,7 +106,7 @@ main p {
 main {
     grid-area: main;
     background-color: #4c566a;
-    padding: 15px;
+    padding: 10px;
     font-size: 22px;
     text-align: center;
     line-height: 1.2;
