@@ -179,7 +179,6 @@ main {
     line-height: 1.2;
     font-family: "Quicksand";
     font-weight: 500;
-    overflow-y: scroll;
 }
 
 body {
@@ -203,10 +202,5 @@ a {
 }
 
 html {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
-}
-::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
 }
