@@ -41,6 +41,7 @@ footer img {
     height: 28px;
     width: 28px;
     margin-left: 4px;
+    border-radius: 7px;
 }
 
 .footertext {
@@ -85,7 +86,7 @@ footer {
     float: right;
     width: 10em;
     height: 10em;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+    border-radius: 5em;
 }
 
 .portfolio-img img {
