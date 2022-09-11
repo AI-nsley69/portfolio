@@ -64,10 +64,32 @@ footer {
     font-weight: bolder;
 }
 
-.portfolio img {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
+.portfolio-div {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.portfolio-div p {
+    float: left;
+    margin: 10px;
+    text-align: right;
+}
+
+.portfolio-div img {
+    float: right;
+    width: 10em;
+    height: 10em;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+}
+
+.portfolio-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
 }
 
 main h4 {
