@@ -67,6 +67,11 @@ footer {
     font-weight: bolder;
 }
 
+.portfolio h3 {
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+
 .portfolio-div {
     display: flex;
     flex-flow: row;
@@ -203,4 +208,6 @@ a {
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: #ffffff1f #161616;
+    scrollbar-width: thin;
 }
