@@ -66,6 +66,7 @@ footer {
 .servers {
     border-radius: 1em;
     box-shadow: 0px 5px 10px -5px #000000;
+    background-color: #00000010;
     border-top: #a3be8c 4px solid;
     padding: 0.25em;
     width: 70%;
@@ -105,6 +106,7 @@ footer {
     flex-flow: column;
     border-top: 4px solid #b48ead;
     box-shadow: 0px 5px 10px -5px #000000;
+    background-color: #00000010;
     padding: 1em;
     border-radius: 10px;
     margin: auto;
