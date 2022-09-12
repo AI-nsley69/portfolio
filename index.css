@@ -11,6 +11,7 @@ header a {
     transition: .2s ease-in-out 0s;
 }
 
+/* Button effect */
 header a:active {
     color: dimgrey;
     font-weight: bold;
@@ -62,6 +63,27 @@ footer {
     min-height: 10%;
 }
 
+.servers {
+    border-radius: 1em;
+    box-shadow: 0px 5px 10px -5px #000000;
+    border-top: #a3be8c 4px solid;
+    padding: 0.25em;
+    width: 70%;
+    margin: auto auto 2em auto;
+    font-size: 20px;
+}
+
+.servers a {
+    text-decoration: none;
+    color: #ffe4e1;
+}
+
+.servers h4 {
+    text-align: left;
+    margin: 0.5em auto 0.8em 10%;
+    font-weight: bolder;
+}
+
 .portfolio {
     order: 1;
     line-height: 0;
@@ -74,6 +96,10 @@ footer {
     font-size: 1.4em;
 }
 
+.portfolio-div h3:hover {
+    transform: scale(1.02);
+}
+
 .portfolio-div {
     display: flex;
     flex-flow: column;
@@ -82,7 +108,6 @@ footer {
     padding: 1em;
     border-radius: 10px;
     margin: auto;
-    justify-content: start;
     align-items: center;
     max-width: 70%;
     margin-bottom: 2em;
@@ -92,7 +117,6 @@ footer {
 .portfolio-div p {
     order: 2;
     margin: 10px;
-    text-align: left;
 }
 
 .portfolio-div img {

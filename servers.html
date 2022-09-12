@@ -17,31 +17,61 @@
         </nav>
     </header>
     <body>
-        <main class="home">
-            <h2>Homelab</h2>
-            <h4>Hardware</h4>
-            <p>My homelab is a HP DL380P Generation 8 server powered by 2x Intel Xeon E5-2680 and 32GB DDR3 ECC.
-                Due to some issues with the consumer harddrives on it, the iLO firmware is hacked to allow for fancontrol
-                through a <a href="https://github.com/AI-nsley69/siLO">script</a> I made myself to keep the fans low due to the environment it is in.
-            </p>
-            <h4>Setup</h4>
-            <p> 
-                Powered by Proxmox as the Operating System, it is using LXC to containerize as many services as possible, with all containers
-                running in their own subnet behind <a href="https://www.pfsense.org/">pfsense</a>. This lets me tighten the forwarding rules, 
-                use vpn as gateways for certain services that I do not want the request to come from my public ip, scanning packets to prevent any 
-                intrustion attacks with <a href="https://www.snort.org/">Snort</a> & <a href="http://www.squid-cache.org/">Squid Proxy</a> to cache requests
-                and scan downloads for malicious content with <a href="https://www.clamav.net/">ClamAV</a>.
-                The services are not exposed directly, but through a reverse proxy done with <a href="https://caddyserver.com/">Caddy</a> 
-                for automatic SSL certificates and using multiple services with one port (443 specifically) through subdomains.
-            </p> 
-            <h4>Services</h4>
-            <p>
-                Some services include my own git server with the <a href="https://gitea.io/en-us/">Gitea</a> application, 
-                my own Bitwarden instance with <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a> as the implementation for the backend, 
-                <a href="https://jellyfin.org/">Jellyfin</a> as a media for all of my media needs, 
-                <a href="https://jellyfin.org/">Jenkins</a> as build server to compile my own software and other self-hosted software like Vaultwarden 
-                and my own wiki with <a href="https://js.wiki/">Wiki.js</a> to document the majority of things I do and how I setup stuff.
-            </p>
+        <main>
+            <div class="servers">
+                <h2>Homelab</h2>
+                <h4>Hardware</h4>
+                <p>
+                    HP DL380P Generation 8 server with 2x Intel Xeon E5-2680 and 32GB DDR3 ECC.
+                </p>
+                <h4>Setup</h4>
+                <p> 
+                    Powered by Proxmox, it is using LXC for containers, with everything behind a 
+                    <a href="https://www.pfsense.org/">pfsense</a> instance. To allow for harder security, better monitoring & vpn gateways, scanning packets to prevent any 
+                    intrustion attacks with <a href="https://www.snort.org/">Snort</a> & <a href="http://www.squid-cache.org/">Squid Proxy</a> for caching
+                    and scan downloads for malicious content with <a href="https://www.clamav.net/">ClamAV</a>.
+                    The services exposed through a reverse proxy called <a href="https://caddyserver.com/">Caddy</a> 
+                    for automatic SSL certificates and using multiple services with on port 443.
+                </p> 
+                <h4>Services</h4>
+                <p>
+                    I currently run <a href="https://gitea.io/en-us/">Gitea</a>, 
+                    <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>, 
+                    <a href="https://jellyfin.org/">Jellyfin</a>, 
+                    <a href="https://jellyfin.org/">Jenkins</a>, 
+                    <a href="https://js.wiki/">Wiki.js</a> and much more
+                </p>
+                <h4>Usage</h4>
+                <p>
+                    With my own homelab I have the possibility to run 24/7 applications of my own, 
+                    or use them for my personal projects like my own Git server, control over my password manager,
+                    personal build server for projects which produces AOT binaries & 
+                    Wiki to document my hosting processes
+                </p>
+            </div>
+            <div class="servers">
+                <h2>Archbox</h2>
+                <h4>Hardware</h4>
+                <p>
+                    Asus Aspire 4820 with Intel i3 M 380 & 4GB of DDR3 RAM
+                </p>
+                <h4>Setup</h4>
+                <p> 
+                    This server, as you can infer from the name, is running ArchLinux
+                </p> 
+                <h4>Services</h4>
+                <p>
+                    This server is running <a href="https://velocitypowered.com/">Velocity Proxy</a>
+                     & my personal <a href="https://github.com/AI-nsley69/AinsBOT">Discord bot</a>
+                </p>
+                <h4>Usage</h4>
+                <p>
+                    This machine was setup with the intention of maintaining a Minecraft proxy 
+                    for my technical Minecraft servers. It allows the players to easily switch between the servers 
+                    through an in-game command, rather than logging in and out of them. I also run 
+                    my personal discord bot on this server as it had the spare resources for it
+                </p>
+            </div>
         </main>
     </body>
     <footer>
