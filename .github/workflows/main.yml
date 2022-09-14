@@ -11,6 +11,16 @@ on:
     branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -33,11 +43,15 @@ jobs:
         with:
           node-version: 16
       - run: npm i minify -g
-      - run: minify index.html > index.html
-      - run: minify contact.html > contact.html
-      - run: minify portfolio.html > portfolio.html
-      - run: minify servers.html > servers.html
-      - run: minify index.css > index.css
+      - run: mkdir old/
+      - run: mv *.html old/
+      - run: mv *.css old/
+      - run: minify old/index.html > index.html
+      - run: minify old/contact.html > contact.html
+      - run: minify old/portfolio.html > portfolio.html
+      - run: minify old/servers.html > servers.html
+      - run: minify old/index.css > index.css
+      - run: rm -r old/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
