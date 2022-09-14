@@ -1,3 +1,5 @@
+/* Header Start */
+
 header nav {
     display: flex;
     justify-content: space-around;
@@ -34,6 +36,10 @@ header {
     min-height: 20%;
 }
 
+/* Header End */
+
+/* Footer start */
+
 footer nav {
     text-align: right;
 }
@@ -63,6 +69,10 @@ footer {
     min-height: 10%;
 }
 
+/* Footer End */
+
+/* Servers start */
+
 .servers {
     border-radius: 1em;
     box-shadow: 0px 5px 10px -5px #000000;
@@ -83,6 +93,10 @@ footer {
     text-align: center;
     font-weight: bolder;
 }
+
+/* Servers End */
+
+/* Portfolio Start */
 
 .portfolio {
     order: 1;
@@ -128,6 +142,10 @@ footer {
     border-radius: 999999px;
     margin-bottom: 0.5em;
 }
+
+/* Portfolio End */
+
+/* Main Start */
 
 main h4 {
     line-height: 0px;
@@ -214,6 +232,8 @@ main {
     font-family: "Quicksand";
     font-weight: 500;
 }
+
+/* Main End */
 
 body {
     display: grid;
