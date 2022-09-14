@@ -237,6 +237,7 @@ a {
 
 html {
     scroll-behavior: smooth;
+    touch-action: manipulation; /* Fixes 300ms input delay on mobile */
     /* Firefox */
     scrollbar-color: #ffffff1f #161616;
     scrollbar-width: thin;
