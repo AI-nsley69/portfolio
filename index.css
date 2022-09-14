@@ -229,6 +229,7 @@ body {
     font-size: 25px;
     color:#f8f8ff;
     font-family: "Poppins";
+    font-display: swap;
 }
 
 a {
