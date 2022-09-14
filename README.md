@@ -10,13 +10,14 @@ Prefetch & preconnect fonts.googleapis.com - This allows for a much faster fetch
 &display=swap at the end of the font url - This will use a supported font and then swap whenever the third party font has been loaded in
 Preload fonts & css file - Due to them preloading, loading times are improved
 Fetch Poppins & Quicksand with one url - Instead of going through an url twice, I fetch both of them at once
+Only load in the specific font weights - Less data to be fetched
 Calculate size of images & scale them accordingly - Previously, the images were larger than they were displayed, causing extra data to be transferred
 Setup CloudFront - CDN for assets, helps with loading content from other geographical areas
+Prefetch & preconnect to CDN - Same as with google fonts
 Lazy load images - Doesn't wait for the images to load in at first
 ```
 
 TODO:
 ```
-Only load in the specific font weights - Less data to be fetched
 Load in smaller resolution images first - Some visible image before the full one is loaded in
 ```
