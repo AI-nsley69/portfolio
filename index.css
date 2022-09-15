@@ -138,7 +138,7 @@ footer {
     order: 0;
     float: left;
     width: 7em;
-    height: auto;
+    height: 7em;
     border-radius: 999999px;
     margin-bottom: 0.5em;
 }
