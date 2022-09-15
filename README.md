@@ -13,6 +13,7 @@ Fetch Poppins & Quicksand with one url - Instead of going through an url twice, 
 Only load in the specific font weights - Less data to be fetched
 Calculate size of images & scale them accordingly - Previously, the images were larger than they were displayed, causing extra data to be transferred
 Lazy load images - Doesn't wait for the images to load in at first
+Minify content during gh pages deploy - Reduces data to send to the client, strips comments, newlines, whitespaces etc that are unnecessary
 ```
 
 TODO:
