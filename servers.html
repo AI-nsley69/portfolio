@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="preload" as="style" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
-        <link rel="preload" as="style" type="text/css" href="index.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <title>Ainsley</title>
-        <link rel="icon" href="assets/icon.webp">
-        <script defer data-goatcounter="https://stats.trainsley69.me/count"
-        async src="//gc.zgo.at/count.js"></script>
-    </head>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/contact">Contact Me</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/servers"><u>Servers</u></a>
-        </nav>
-    </header>
-    <body>
-        <main>
-            <div class="servers">
-                <h2>Homelab</h2>
-                <h4>Hardware</h4>
-                <p>
-                    HP DL380P Generation 8 server with 2x Intel Xeon E5-2680 and 32GB DDR3 ECC.
-                </p>
-                <h4>Setup</h4>
-                <p> 
-                    Powered by Proxmox, it is using LXC for containers, with everything behind a 
-                    <a href="https://www.pfsense.org/">pfsense</a> instance. To allow for harder security, better monitoring & vpn gateways, scanning packets to prevent any 
-                    intrustion attacks with <a href="https://www.snort.org/">Snort</a> & <a href="http://www.squid-cache.org/">Squid Proxy</a> for caching
-                    and scan downloads for malicious content with <a href="https://www.clamav.net/">ClamAV</a>.
-                    The services exposed through a reverse proxy called <a href="https://caddyserver.com/">Caddy</a> 
-                    for automatic SSL certificates and using multiple services with on port 443.
-                </p> 
-                <h4>Services</h4>
-                <p>
-                    I currently run <a href="https://gitea.io/en-us/">Gitea</a>, 
-                    <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>, 
-                    <a href="https://jellyfin.org/">Jellyfin</a>, 
-                    <a href="https://jellyfin.org/">Jenkins</a>, 
-                    <a href="https://js.wiki/">Wiki.js</a> and much more
-                </p>
-                <h4>Usage</h4>
-                <p>
-                    With my own homelab I have the possibility to run 24/7 applications of my own, 
-                    or use them for my personal projects like my own Git server, control over my password manager,
-                    personal build server for projects which produces AOT binaries & 
-                    Wiki to document my hosting processes
-                </p>
-            </div>
-            <div class="servers">
-                <h2>Archbox</h2>
-                <h4>Hardware</h4>
-                <p>
-                    Asus Aspire 4820 with Intel i3 M 380 & 4GB of DDR3 RAM
-                </p>
-                <h4>Setup</h4>
-                <p> 
-                    This server, as you can infer from the name, is running ArchLinux
-                </p> 
-                <h4>Services</h4>
-                <p>
-                    This server is running <a href="https://velocitypowered.com/">Velocity Proxy</a>
-                     & my personal <a href="https://github.com/AI-nsley69/AinsBOT">Discord bot</a>
-                </p>
-                <h4>Usage</h4>
-                <p>
-                    This machine was setup with the intention of maintaining a Minecraft proxy 
-                    for my technical Minecraft servers. It allows the players to easily switch between the servers 
-                    through an in-game command, rather than logging in and out of them. I also run 
-                    my personal discord bot on this server as it had the spare resources for it
-                </p>
-            </div>
-            <div class="servers">
-                <h2>Debianbox</h2>
-                <h4>Hardware</h4>
-                <p>
-                    Retired custom-built desktop, Intel i7-2600K with 8GB of DDR3 RAM
-                </p>
-                <h4>Setup</h4>
-                <p> 
-                    Alike the Archbox, the OS can be infered from the name, as it is running Debian.
-                </p> 
-                <h4>Services</h4>
-                <p>
-                    This server is running 3 Minecraft servers: A Survival, Creative & Creative Copy of the Survival World
-                </p>
-                <h4>Usage</h4>
-                <p>
-                    This machine is running the backend Minecraft server for the proxy on Archbox. 
-                    It is purely for a technical community server where we try to utilize bugs inside Minecraft to 
-                    allow for incredible stuff in-game.
-                </p>
-            </div>
-        </main>
-    </body>
-    <footer>
-        <div class="footertext">
-            <a href="https://github.com/AI-nsley69/portfolio">Source</a>
-             | 
-            <a href="https://stats.trainsley69.me/">Stats</a>
-        </div>
-        <nav>
-            <a href="https://about.trainsley69.me/discord" title="Project Wonderland"><img src="assets/discord.webp" alt="Discord Profile Picture" loading="lazy"></a>
-            <a href="https://github.com/AI-nsley69" title="AI-nsley69"><img src="assets/github.webp" alt="Github icon" loading="lazy"></a>
-            <a href="https://www.youtube.com/channel/UCTcMr19KsC2L6b4pQmw3KuA" title="Trainsley69"><img src="assets/youtube.webp" alt="Youtube icon" loading="lazy"></a>
-            <a href="https://twitter.com/trainsley69" title="Trainsley69"><img src="assets/twitter.webp" alt="Twitter icon" loading="lazy"></a>
-            <a href="https://www.reddit.com/user/GengusDad" title="GengusDad"><img src="assets/reddit.webp" alt="Reddit icon" loading="lazy"></a>
-        </nav>
-    </footer>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" as="style" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
+    <link rel="preload" as="style" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Ainsley</title>
+    <link rel="icon" href="assets/icon.webp">
+    <script defer data-goatcounter="https://stats.trainsley69.me/count" async src="//gc.zgo.at/count.js"></script>
+  </head>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/contact">Contact Me</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/servers"><u>Servers</u></a>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <!-- the div class servers formats a card, each of this div with said class is its own card -->
+      <div class="servers">
+        <h2>Homelab</h2>
+        <h4>Hardware</h4>
+        <p>
+          HP DL380P Generation 8 server with 2x Intel Xeon E5-2680 and 32GB DDR3 ECC.
+        </p>
+        <h4>Setup</h4>
+        <p>
+          Powered by Proxmox, it is using LXC for containers, with everything behind a
+          <a href="https://www.pfsense.org/">pfsense</a> instance. To allow for harder security, better monitoring & vpn gateways, scanning packets to prevent any
+          intrustion attacks with <a href="https://www.snort.org/">Snort</a> & <a href="http://www.squid-cache.org/">Squid Proxy</a> for caching
+          and scan downloads for malicious content with <a href="https://www.clamav.net/">ClamAV</a>.
+          The services exposed through a reverse proxy called <a href="https://caddyserver.com/">Caddy</a>
+          for automatic SSL certificates and using multiple services with on port 443.
+        </p>
+        <h4>Services</h4>
+        <p>
+          I currently run <a href="https://gitea.io/en-us/">Gitea</a>,
+          <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>,
+          <a href="https://jellyfin.org/">Jellyfin</a>,
+          <a href="https://jellyfin.org/">Jenkins</a>,
+          <a href="https://js.wiki/">Wiki.js</a> and much more
+        </p>
+        <h4>Usage</h4>
+        <p>
+          With my own homelab I have the possibility to run 24/7 applications of my own,
+          or use them for my personal projects like my own Git server, control over my password manager,
+          personal build server for projects which produces AOT binaries &
+          Wiki to document my hosting processes
+        </p>
+      </div>
+      <div class="servers">
+        <h2>Archbox</h2>
+        <h4>Hardware</h4>
+        <p>
+          Asus Aspire 4820 with Intel i3 M 380 & 4GB of DDR3 RAM
+        </p>
+        <h4>Setup</h4>
+        <p>
+          This server, as you can infer from the name, is running ArchLinux
+        </p>
+        <h4>Services</h4>
+        <p>
+          This server is running <a href="https://velocitypowered.com/">Velocity Proxy</a>
+          & my personal <a href="https://github.com/AI-nsley69/AinsBOT">Discord bot</a>
+        </p>
+        <h4>Usage</h4>
+        <p>
+          This machine was setup with the intention of maintaining a Minecraft proxy
+          for my technical Minecraft servers. It allows the players to easily switch between the servers
+          through an in-game command, rather than logging in and out of them. I also run
+          my personal discord bot on this server as it had the spare resources for it
+        </p>
+      </div>
+      <div class="servers">
+        <h2>Debianbox</h2>
+        <h4>Hardware</h4>
+        <p>
+          Retired custom-built desktop, Intel i7-2600K with 8GB of DDR3 RAM
+        </p>
+        <h4>Setup</h4>
+        <p>
+          Alike the Archbox, the OS can be infered from the name, as it is running Debian.
+        </p>
+        <h4>Services</h4>
+        <p>
+          This server is running 3 Minecraft servers: A Survival, Creative & Creative Copy of the Survival World
+        </p>
+        <h4>Usage</h4>
+        <p>
+          This machine is running the backend Minecraft server for the proxy on Archbox.
+          It is purely for a technical community server where we try to utilize bugs inside Minecraft to
+          allow for incredible stuff in-game.
+        </p>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footertext">
+      <a href="https://github.com/AI-nsley69/portfolio">Source</a>
+      |
+      <a href="https://stats.trainsley69.me/">Stats</a>
+    </div>
+    <nav>
+      <a href="https://about.trainsley69.me/discord" title="Project Wonderland"><img src="assets/discord.webp" alt="Discord Profile Picture" loading="lazy"></a>
+      <a href="https://github.com/AI-nsley69" title="AI-nsley69"><img src="assets/github.webp" alt="Github icon" loading="lazy"></a>
+      <a href="https://www.youtube.com/channel/UCTcMr19KsC2L6b4pQmw3KuA" title="Trainsley69"><img src="assets/youtube.webp" alt="Youtube icon" loading="lazy"></a>
+      <a href="https://twitter.com/trainsley69" title="Trainsley69"><img src="assets/twitter.webp" alt="Twitter icon" loading="lazy"></a>
+      <a href="https://www.reddit.com/user/GengusDad" title="GengusDad"><img src="assets/reddit.webp" alt="Reddit icon" loading="lazy"></a>
+    </nav>
+  </footer>
+
 </html>

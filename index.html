@@ -1,75 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="preload" as="style" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
-        <link rel="preload" as="style" type="text/css" href="index.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="icon" href="assets/icon.webp">
-        <title>Ainsley</title>
-        <meta content="Hello, I'm Ainsley!" property="og:title" />
-        <meta content="Welcome to my portfolio :)" property="og:description" />
-        <meta content="https://portfolio.trainsley69.me" property="og:url" />
-        <meta content="assets/icon.webp" property="og:image" />
-        <meta content="#dcdcdc" data-react-helmet="true" name="theme-color" />
-        <script defer data-goatcounter="https://stats.trainsley69.me/count"
-        async src="//gc.zgo.at/count.js"></script>
-    </head>
-    <header>
-        <nav>
-            <a href="/"><u>Home</u></a>
-            <a href="/contact">Contact Me</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/servers">Servers</a>
-        </nav>
-    </header>
-    <body>
-        <main class="home">
-            <div class="typewriter-container">
-                <h3 class="typewriter">Hello, I'm Ainsley!</h3>
-            </div>
-            <p>
-                I am an 18 year old student from Sweden & a computer enthusiast. 
-                I enjoy activities like selfhosting, programming & hardware.
-            </p>
-            <p>
-                I have been using Linux since the fall of 2020, starting off with 
-                <a href="https://pop.system76.com/">Pop!_OS</a> until I switched to 
-                <a href="https://voidlinux.org">VoidLinux</a> half a year later & been using it since. 
-                I am currently running <a href="https://www.proxmox.com/en/">Proxmox</a>, 
-                <a href="https://www.debian.org/">Debian</a>,
-                <a href="https://ubuntu.com/">Ubuntu</a>, 
-                <a href="https://www.openbsd.org/">OpenBSD</a>, 
-                <a href="https://www.oracle.com/linux/">Oracle Linux</a> & 
-                <a href="https://archlinux.org/">ArchLinux</a> across several servers.
-            </p>
-            <p>
-                I also enjoy doing Redstone in <a href="https://www.minecraft.net/en-us">Minecraft</a>, 
-                such as complex piston doors, computational machines, survival farms & ideas I find entertaining.
-            </p>
-            <p>
-                I have also coded in several languages such as
-                <a href="https://ziglang.org/">Zig</a>,
-                <a href="https://nodejs.org/en/">Node.js</a>,
-                <a href="https://www.python.org/">Python</a> & more languages with less experience.
-            </p>
-        </main>
-    </body>
-    <footer>
-        <div class="footertext">
-            <a href="https://github.com/AI-nsley69/portfolio">Source</a>
-             | 
-            <a href="https://stats.trainsley69.me/">Stats</a>
-        </div>
-        <nav>
-            <a href="https://about.trainsley69.me/discord" title="Project Wonderland"><img src="assets/discord.webp" alt="Discord Profile Picture" loading="lazy"></a>
-            <a href="https://github.com/AI-nsley69" title="AI-nsley69"><img src="assets/github.webp" alt="Github icon" loading="lazy"></a>
-            <a href="https://www.youtube.com/channel/UCTcMr19KsC2L6b4pQmw3KuA" title="Trainsley69"><img src="assets/youtube.webp" alt="Youtube icon" loading="lazy"></a>
-            <a href="https://twitter.com/trainsley69" title="Trainsley69"><img src="assets/twitter.webp" alt="Twitter icon" loading="lazy"></a>
-            <a href="https://www.reddit.com/user/GengusDad" title="GengusDad"><img src="assets/reddit.webp" alt="Reddit icon" loading="lazy"></a>
-        </nav>
-    </footer>
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- DNS Prefetch & preconnect to fonts -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- Preload stylesheet & fonts -->
+    <link rel="preload" as="style" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
+    <link rel="preload" as="style" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="assets/icon.webp">
+    <title>Ainsley</title>
+    <!-- Meta content to support Discord embeds -->
+    <meta content="Hello, I'm Ainsley!" property="og:title" />
+    <meta content="Welcome to my portfolio :)" property="og:description" />
+    <meta content="https://portfolio.trainsley69.me" property="og:url" />
+    <meta content="assets/icon.webp" property="og:image" />
+    <meta content="#dcdcdc" data-react-helmet="true" name="theme-color" />
+    <!-- GoatCounter Analytics: "Easy web analytics. No tracking of personal data." -->
+    <script defer data-goatcounter="https://stats.trainsley69.me/count" async src="//gc.zgo.at/count.js"></script>
+  </head>
+  <!-- Header -->
+  <header>
+    <!-- Navbar for all of the contact information -->
+    <nav>
+      <a href="/"><u>Home</u></a>
+      <a href="/contact">Contact Me</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/servers">Servers</a>
+    </nav>
+  </header>
+  <!-- Body -->
+
+  <body>
+    <!-- home class for home page formatting -->
+    <main class="home">
+      <!-- Typewriter effect for this header, makes it fancy but has some performance impact -->
+      <div class="typewriter-container">
+        <h3 class="typewriter">Hello, I'm Ainsley!</h3>
+      </div>
+      <!-- 
+                Below are seperate paragraphs with margin between each, describes stuff about me 
+                Has fancy animation when hovering over link, although links are visible
+                through header. TODO: fix that
+            -->
+      <p>
+        I am an 18 year old student from Sweden & a computer enthusiast.
+        I enjoy activities like selfhosting, programming & hardware.
+      </p>
+      <p>
+        I have been using Linux since the fall of 2020, starting off with
+        <a href="https://pop.system76.com/">Pop!_OS</a> until I switched to
+        <a href="https://voidlinux.org">VoidLinux</a> half a year later & been using it since.
+        I am currently running <a href="https://www.proxmox.com/en/">Proxmox</a>,
+        <a href="https://www.debian.org/">Debian</a>,
+        <a href="https://ubuntu.com/">Ubuntu</a>,
+        <a href="https://www.openbsd.org/">OpenBSD</a>,
+        <a href="https://www.oracle.com/linux/">Oracle Linux</a> &
+        <a href="https://archlinux.org/">ArchLinux</a> across several servers.
+      </p>
+      <p>
+        I also enjoy doing Redstone in <a href="https://www.minecraft.net/en-us">Minecraft</a>,
+        such as complex piston doors, computational machines, survival farms & ideas I find entertaining.
+      </p>
+      <p>
+        I have also coded in several languages such as
+        <a href="https://ziglang.org/">Zig</a>,
+        <a href="https://nodejs.org/en/">Node.js</a>,
+        <a href="https://www.python.org/">Python</a> & more languages with less experience.
+      </p>
+    </main>
+  </body>
+  <!-- 
+        Footer
+        Contains a div for the left side, individually seperated. TODO: fix
+        Contains a navbar for icons on the right 
+    -->
+  <footer>
+    <div class="footertext">
+      <a href="https://github.com/AI-nsley69/portfolio">Source</a>
+      |
+      <a href="https://stats.trainsley69.me/">Stats</a>
+    </div>
+    <nav>
+      <a href="https://about.trainsley69.me/discord" title="Project Wonderland"><img src="assets/discord.webp" alt="Discord Profile Picture" loading="lazy"></a>
+      <a href="https://github.com/AI-nsley69" title="AI-nsley69"><img src="assets/github.webp" alt="Github icon" loading="lazy"></a>
+      <a href="https://www.youtube.com/channel/UCTcMr19KsC2L6b4pQmw3KuA" title="Trainsley69"><img src="assets/youtube.webp" alt="Youtube icon" loading="lazy"></a>
+      <a href="https://twitter.com/trainsley69" title="Trainsley69"><img src="assets/twitter.webp" alt="Twitter icon" loading="lazy"></a>
+      <a href="https://www.reddit.com/user/GengusDad" title="GengusDad"><img src="assets/reddit.webp" alt="Reddit icon" loading="lazy"></a>
+    </nav>
+  </footer>
+
 </html>
