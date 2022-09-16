@@ -43,15 +43,8 @@ jobs:
         with:
           node-version: 16
       - run: npm i minify -g
-      - run: mkdir old/
-      - run: mv *.html old/
-      - run: mv *.css old/
-      - run: minify old/index.html > index.html
-      - run: minify old/contact.html > contact.html
-      - run: minify old/portfolio.html > portfolio.html
-      - run: minify old/servers.html > servers.html
-      - run: minify old/index.css > index.css
-      - run: rm -r old/
+      - name: minify files
+        run: mkdir old/ && mv *.html *.css old/ && for file in old/*; do minify "$file" > "${file##*/}"; done && rm -r old/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
