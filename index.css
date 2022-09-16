@@ -145,13 +145,16 @@ footer {
 
 /* Portfolio End */
 
-/* Main Start */
+/* Home start */
 
-main h4 {
-    line-height: 0px;
-    font-weight: 700;
-    font-style: italic;
-    color: #dcdcdc;
+.home {
+    background: linear-gradient(0deg, #4c566cdf, #4c566adf), url("assets/home.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #000000a3;
 }
 
 .home a {
@@ -177,6 +180,17 @@ main h4 {
 .home a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+/* Home end */
+
+/* Main Start */
+
+main h4 {
+    line-height: 0px;
+    font-weight: 700;
+    font-style: italic;
+    color: #dcdcdc;
 }
 
 main h2, h3, h4 {
