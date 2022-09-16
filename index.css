@@ -25,6 +25,12 @@ header a:hover {
     transform: scale(1.02);
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 0.7em;
+    }
+}
+
 header { 
     position: sticky;
     top: 0px;
@@ -53,6 +59,12 @@ footer img {
 
 .footertext {
     text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 1.2em;
+    }
 }
 
 footer {
