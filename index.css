@@ -27,7 +27,7 @@ header a:hover {
 
 @media only screen and (max-width: 600px) {
     header {
-        font-size: 0.7em;
+        font-size: 0.6em !important;
     }
 }
 
@@ -54,17 +54,11 @@ footer img {
     height: 28px;
     width: 28px;
     margin-left: 4px;
-    border-radius: 7px;
+    border-radius: 0.3em;
 }
 
 .footertext {
     text-align: left;
-}
-
-@media only screen and (max-width: 600px) {
-    footer {
-        font-size: 1.2em;
-    }
 }
 
 footer {
@@ -79,6 +73,17 @@ footer {
     line-height: 0px;
     font-size: 18px;
     min-height: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 0.6em !important;
+    }
+    
+    footer img {
+        width: 18px;
+        height: 18px;
+    }
 }
 
 /* Footer End */
@@ -275,6 +280,7 @@ body {
     font-size: 25px;
     color:#f8f8ff;
     font-family: "Poppins";
+    -webkit-text-size-adjust: 100%; /* Prevent iOS from scaling font */
 }
 
 a {
