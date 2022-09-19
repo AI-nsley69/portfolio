@@ -27,7 +27,7 @@ header a:hover {
 
 @media only screen and (max-width: 600px) {
     header {
-        font-size: 0.6em !important;
+        font-size: 0.55em !important;
     }
 }
 
