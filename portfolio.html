@@ -25,121 +25,93 @@
 
   <body>
     <main>
-      <!-- Each div with portfolio-div class becomes its own card for each project -->
-      <div class="portfolio-div">
-        <img src="assets/ainsbot.webp" alt="AinsBOT Profile Picture" loading="lazy">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/AinsBOT">AinsBOT</a></h3>
-        <p>
-          A personal Discord Bot written in Node.js,
-          some features such as fetching tiktoks, reddit posts & message links to display their content.
-          More fun commands like fetching animals, interacting with users through gifs (hugs etc)
-          and the ability to disable most commands/features!
-        </p>
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/KhaosMC/khaos-utils">Khaos Utils</a></h3>
-        <p>
-          A Discord Bot written in Node.js to serve the community of a Technical Minecraft Server
-          managed by me. Features include application management
-          (creating valid application links through secrets, setting up polls for apps, creating a channel for the applicant etc),
-          communicating with the Minecraft servers (gathering status on proxy & the 3 minecraft servers and bridging all of the chats together with a websocket server and server-side mods)
-          moderation commands (kick, ban, mute etc), & more!
-        </p>
-        <img src="assets/khaos.webp" alt="KhaosMC Logo" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/imbed">imbed</a></h3>
-        <p>
-          A small program to embed any data into an image written in Zig. It is achieved through
-          appending the data after the JPG header to end the image, this causes no corruption/change in the image aside from its storage size.
-          Currently requires some finicky methods to embed anything other than a txt file
-          (i.e rename file to message.txt, embed that then when reversing the process revert the name).
-          Encrypts the data through XSalsa20Poly1305 through user input password.
-        </p>
-        <img src="assets/zig.webp" alt="Ziglang Icon" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <img src="assets/mcrisc1608.webp" alt="Minecraft CPU" loading="lazy">
-        <h3 class="portfolio"><a>MCRISC1608</a></h3>
-        <p>
-          A RISC-inspired Minecraft CPU built with Redstone. Started as a learning project with <a href="https://www.youtube.com/c/WildEngineering">TheWildJarvi</a> as a mentor.
-          8-bit CPU with 7 registers & 32 bytes of RAM. Had access to 3x 7-segment displays (8-bit) and a mod 32 Matrix display.
-          Was able to sort 5 numbers through bubble sort in 20 minutes.
-        </p>
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/ZigFuck">ZigF*ck</a></h3>
-        <p>
-          A small Brainf*ck interpreter written in Zig.
-          Iterates over all characters in a given file, however, it discards any non-brainf*ck
-          characters, then sends them through a switch case to interpret each and every one of them.
-        </p>
-        <img src="assets/brainfuck.webp" alt="Brainfuck Icon" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/BrainfuckToZig">Brainf*ckToZig</a></h3>
-        <p>
-          A small Brainf*ck transpilerto & in Zig.
-          Uses code from the before mentioned interpreter to append to a string.
-          Uses the built-in standard library tool to parse it.
-          Main advantage over interpreter is the speed up benefit from the Zig compiler
-        </p>
-        <img src="assets/brainfuck.webp" alt="Brainfuck Icon" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/ZigBrot">ZigBrot</a></h3>
-        <p>
-          A simple (multithreaded) Mandelbrot renderer written in Zig.
-          Was intended on rendering multiple frames for a zooming video.
-          Written using the pseudocode found on Wikipedia as a reference.
-        </p>
-        <img src="assets/mandelbrot.webp" alt="Mandelbrot Set" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/true-all-of-fabric">True All Of Fabric</a></h3>
-        <p>
-          A small program written in Python to gather all of the fabric mods from a current mc version
-          and downloading them into a single directory. Created as a joke in response to a modpack known as All Of Fabric
-          which is not literal. However, this program is!
-        </p>
-        <img src="assets/aof.webp" alt="All of Fabric Icon" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/MonoPew">MonoPew</a></h3>
-        <p>
-          A small space invaders-like game created in C# with the MonoGame framework as a school assignment.
-          All game art was created in under 5 minutes through Microsoft Paint as the main focus was the game itself.
-          Supports multiple levels where each level increases speed for both yourself & the enemies, however,
-          you need to kill more enemies to spawn in the boss.
-        </p>
-        <img src="assets/monogame.webp" alt="MonoGame Icon" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a href="https://github.com/KismetNetwork/Luckperms-Group-Whitelist">Luckperms Group Whitelist</a></h3>
-        <p>
-          A small <a href="https://velocitypowered.com">Velocity</a> plugin in Java, which depends on a permission-based plugin
-          to only allow certain groups to join specific servers on the proxy.
-          Created with the intention of using it on Minecraft networks to minimize the needed server-side mods &
-          manual management for whitelist.
-        </p>
-        <img src="assets/github.webp" alt="Github Icon" loading="lazy">
-      </div>
-      <div class="portfolio-div">
-        <img src="assets/repl.webp" alt="Repl.it Icon" loading="lazy">
-        <h3 class="portfolio"><a href="https://github.com/AI-nsley69/repl-api">Repl API</a></h3>
-        <p>
-          A nodejs express app for my own personal API usages. Currently in use with AinsBOT
-          for fetching information about characters from a mobile game with unofficial resources due
-          to lack of one. Optimized with caching and reducing external requests if possible.
-        </p>
-      </div>
-      <div class="portfolio-div">
-        <h3 class="portfolio"><a>Honorable Mentions</a></h3>
-        <p>
-          <a href="https://github.com/void-linux/void-packages/pull/34688">Link</a> - VoidLinux Package Repository Contribution<br>
-          <a href="https://github.com/login/oauth/authorize?client_id=7e0a3cd836d3e544dbd9&redirect_uri=https%3A%2F%2Fgist.github.com%2Fauth%2Fgithub%2Fcallback%3Freturn_to%3Dhttps%253A%252F%252Fgist.github.com%252FAI-nsley69%252Fe87714265a36a4662cfeeaacba312be0&response_type=code&state=12267da297359b56f55090c3a21f7ed8b5e500caa4a538683d0c227fb43fdd87">Link</a> - Minecraft server setup guide on Oracle Cloud Always Free
-        </p>
-        <img src="assets/icon.webp" alt="Discord Icon" loading="lazy">
+      <div class="portfolio-list">
+        <!-- Each div with portfolio-div class becomes its own card for each project -->
+        <div class="portfolio-div">
+          <img src="assets/ainsbot.webp" alt="AinsBOT Profile Picture" loading="lazy">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/AinsBOT">AinsBOT</a></h3>
+          <p>
+            A multi-purpose Discord Bot written in Node.js
+          </p>
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/KhaosMC/khaos-utils">Khaos Utils</a></h3>
+          <p>
+            A special-purpose Discord Bot written in Node.js for a Minecraft community.
+          </p>
+          <img src="assets/khaos.webp" alt="KhaosMC Logo" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/imbed">imbed</a></h3>
+          <p>
+            A small program to embed any data into an image written in Zig
+          </p>
+          <img src="assets/zig.webp" alt="Ziglang Icon" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <img src="assets/mcrisc1608.webp" alt="Minecraft CPU" loading="lazy">
+          <h3 class="portfolio"><a>MCRISC1608</a></h3>
+          <p>
+            A RISC-inspired Minecraft CPU built with Redstone
+          </p>
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/ZigFuck">ZigF*ck</a></h3>
+          <p>
+            A small Brainf*ck interpreter written in Zig
+          </p>
+          <img src="assets/brainfuck.webp" alt="Brainfuck Icon" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/BrainfuckToZig">Brainf*ckToZig</a></h3>
+          <p>
+            A small Brainf*ck transpilerto & in Zig
+          </p>
+          <img src="assets/brainfuck.webp" alt="Brainfuck Icon" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/ZigBrot">ZigBrot</a></h3>
+          <p>
+            A simple (multithreaded) Mandelbrot renderer written in Zig
+          </p>
+          <img src="assets/mandelbrot.webp" alt="Mandelbrot Set" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/true-all-of-fabric">True All Of Fabric</a></h3>
+          <p>
+            A python script to fetch all Fabric mods from Modrinth.
+          </p>
+          <img src="assets/aof.webp" alt="All of Fabric Icon" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/MonoPew">MonoPew</a></h3>
+          <p>
+            A small space invaders-like game created in C# with the MonoGame framework as a school assignment.
+          </p>
+          <img src="assets/monogame.webp" alt="MonoGame Icon" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a href="https://github.com/KismetNetwork/Luckperms-Group-Whitelist">Luckperms Group Whitelist</a></h3>
+          <p>
+            A small <a href="https://velocitypowered.com">Velocity</a> plugin in Java which allows connections from certain LuckPerms groups to a certain server.
+          </p>
+          <img src="assets/github.webp" alt="Github Icon" loading="lazy">
+        </div>
+        <div class="portfolio-div">
+          <img src="assets/repl.webp" alt="Repl.it Icon" loading="lazy">
+          <h3 class="portfolio"><a href="https://github.com/AI-nsley69/repl-api">Repl API</a></h3>
+          <p>
+            A nodejs express app for my own personal API usages
+          </p>
+        </div>
+        <div class="portfolio-div">
+          <h3 class="portfolio"><a>Honorable Mentions</a></h3>
+          <p>
+            <a href="https://github.com/void-linux/void-packages/pull/34688">Link</a> - VoidLinux Package Repository Contribution<br>
+            <a href="https://github.com/login/oauth/authorize?client_id=7e0a3cd836d3e544dbd9&redirect_uri=https%3A%2F%2Fgist.github.com%2Fauth%2Fgithub%2Fcallback%3Freturn_to%3Dhttps%253A%252F%252Fgist.github.com%252FAI-nsley69%252Fe87714265a36a4662cfeeaacba312be0&response_type=code&state=12267da297359b56f55090c3a21f7ed8b5e500caa4a538683d0c227fb43fdd87">Link</a> - Minecraft server setup guide on Oracle Cloud Always Free
+          </p>
+          <img src="assets/icon.webp" alt="Discord Icon" loading="lazy">
+        </div>
       </div>
     </main>
   </body>
