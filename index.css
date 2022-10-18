@@ -258,7 +258,7 @@ main img {
 main {
     grid-area: main;
     background-color: var(--dark);
-    padding: 3rem;
+    padding: 2rem;
     font-size: 22px;
     text-align: center;
     line-height: 1.2;
