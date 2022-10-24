@@ -22,6 +22,7 @@ header nav div img {
   height: 0.75em;
   margin: 0;
   filter: invert(100%);
+  transition: 0.2s ease-in-out 0s;
 }
 
 /* Button effect */
