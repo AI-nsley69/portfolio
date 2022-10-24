@@ -148,8 +148,8 @@
       <div
         class="portfolio-list"
         x-show="page === 'portfolio'"
-        x-data="{cards = []}"
-        x-init="fetch(https://portfolio.trainsley69.me/portfolio.json).then(res => res.json()).then(data => cards = data)"
+        x-data="{cards: []}"
+        x-init="fetch('https://portfolio.trainsley69.me/portfolio.json').then(response => response.json()).then(data => cards = data.cards)"
       >
         <!-- Each div with portfolio-div class becomes its own card for each project -->
         <template x-for="card in cards" :key="card">
