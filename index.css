@@ -17,6 +17,14 @@ header nav {
     color: var(--text);
 }
 
+header img {
+    width: 0.75em;
+    height: 0.75em;
+    margin: 0;
+    filter: invert(100%);
+}
+
+/* Button effect */
 header a {
     color: var(--header);
     text-shadow: 1px 1.5px #000000be;
@@ -24,21 +32,7 @@ header a {
     transition: .2s ease-in-out 0s;
 }
 
-/* Button effect */
-/*
-header a:active {
-    color: dimgrey;
-    font-weight: bold;
-    transform: scale(0.98);
-    transition: .3s ease-in-out 0s;
-}
-
-header a:hover {
-    transform: scale(1.02);
-}
-*/
-
-header a {
+header div {
     padding: 0em 0.15em 0em 0.15em;
     width: auto;
     height: auto;
@@ -52,7 +46,7 @@ header a {
     border-radius: 10px;
 }
 
-header a:before, header a:after {
+header div:before, header div:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -63,17 +57,17 @@ header a:before, header a:after {
     transition: all 0.3s;
 }
 
-header a:before {
+header div:before {
     top: 0px;
     transform: translateY(10px);
 }
 
-header a:after {
+header div:after {
     bottom: 0px;
     transform: translateY(-10px);
 }
 
-header a:hover:before, header a:hover:after {
+header div:hover:before, header div:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }
@@ -90,9 +84,14 @@ header {
     min-height: 20%;
 }
 
-.selected {
-    color: dimgrey;
-    transform: scale(1.02);
+.selected a {
+    color: #A8A6BAa5;
+    transform: scale(0.98);
+}
+
+.selected img {
+    filter: invert(100%) opacity(0.35);
+    transform: scale(0.98)
 }
 
 /* Header End */
