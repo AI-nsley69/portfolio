@@ -17,7 +17,7 @@ header nav {
     color: var(--text);
 }
 
-header img {
+header nav div img {
     width: 0.75em;
     height: 0.75em;
     margin: 0;
