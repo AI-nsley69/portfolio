@@ -257,6 +257,56 @@ footer {
 
 /* Main Start */
 
+main form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+    margin: auto;
+}
+
+.contact-input {
+    background-color: transparent;
+    border: 2px solid var(--link);
+    transition: all 0.3s;
+    box-sizing: border-box;
+    color: var(--text);
+    font-size: 18px;
+    height: 24px;
+    width: 100%;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border-radius: 0.3em;
+    outline: 0;
+    line-height: 18px;
+}
+
+.contact-content {
+    height: 220px;
+}
+
+.contact-input:focus {
+    border: 2px solid #bc3d55;
+}
+
+[type="submit"] {
+    background: var(--link);
+    color: var(--text);
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    height: 45px;
+    font-size: 24px;
+    border-radius: 0.5em;
+    transition: all 0.3s;
+}
+
+[type="submit"]:hover {
+    background: #bc3d55;
+}
+
 main h4 {
     line-height: 0px;
     font-weight: 700;

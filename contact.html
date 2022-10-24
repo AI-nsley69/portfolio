@@ -37,11 +37,13 @@
 
   <body>
     <main>
-      <img src="assets/icon.webp" alt="Discord pfp" loading="lazy">
-      <p>
-        Hello! If you wish to contact me, you can reach me on email via <a href="mailto:not@trainsley69.me">not@trainsley69.me</a>
-        or by joining the discord server (found at the bottom of each page). My discord tag is Ainsley#6969.
-      </p>
+      <form target="_blank" action="https://formsubmit.co/not@trainsley69.me" method="POST">
+        <input type="hidden" name="_url" value="https://portfolio.trainsley69.me/contact">
+        <input type="text" name="name" class="contact-input" placeholder="Name" required>
+        <input type="email" name="email" class="contact-input" placeholder="Email" required>
+        <textarea type="content" name="message" class="contact-input contact-content" placeholder="Your inquiry" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </main>
   </body>
   <footer>
