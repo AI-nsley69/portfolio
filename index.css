@@ -126,6 +126,15 @@ footer img:active {
   text-align: left;
 }
 
+.footertext a {
+  border-right: 2px solid var(--text);
+  padding-right: 5px;
+}
+
+.footertext a:last-child {
+  border-right: 0;
+}
+
 footer {
   position: sticky;
   bottom: 0px;
