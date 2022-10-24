@@ -201,13 +201,13 @@ footer {
     margin: auto;
     max-height: 0;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease-in-out;
 }
 
 .portfolio-div:hover p {
     max-height: 60vh;
     opacity: 1;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease-in-out;
 }
 
 .portfolio-div img {
