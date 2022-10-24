@@ -49,7 +49,7 @@
   <!-- Body -->
 
   <body
-    x-data="{page: 'home', pages: ['home', 'portfolio', 'servers', 'contact']}"
+    x-data="{page: 'home', pages: ['home', 'portfolio', 'experience', 'servers', 'contact']}"
   >
     <!-- Header -->
     <header>
@@ -81,32 +81,17 @@
         <p>
           I am an 18-year-old IT student from Sweden in my last year of
           Gymnasium. I am an enormous computer enthusiast who enjoys activities
-          like self-hosting, programming & hardware.
+          like self-hosting, programming & hardware
         </p>
         <p>
           Linux user since the fall of 2020, started with
           <a href="https://pop.system76.com/">Pop!_OS</a> until I made the
           switch to <a href="https://voidlinux.org">VoidLinux</a> half a year
-          later. Currently, using
-          <a href="https://www.proxmox.com/en/">Proxmox</a>,
-          <a href="https://www.debian.org/">Debian</a>,
-          <a href="https://ubuntu.com/">Ubuntu</a>,
-          <a href="https://www.openbsd.org/">OpenBSD</a>,
-          <a href="https://www.oracle.com/linux/">Oracle Linux</a> &
-          <a href="https://archlinux.org/">ArchLinux</a> across several servers.
+          later
         </p>
         <p>
           <a href="https://www.minecraft.net/en-us">Minecraft</a> Redstone
-          fanatic. Projects include complex piston doors, computational
-          machines, survival farms & other ideas I find entertaining.
-        </p>
-        <p>
-          Additionally, I have experience coding in several languages such as
-          <a href="https://ziglang.org/">Zig</a>, JavaScript (<a
-            href="https://nodejs.org/en/"
-            >Node.js</a
-          >), <a href="https://www.python.org/">Python</a>, and more languages
-          with less experience.
+          fanatic. Computational, complex doors, farms & more
         </p>
       </div>
 
@@ -183,6 +168,57 @@
             </p>
           </div></a
         > -->
+      </div>
+
+      <div x-show="page === 'experience'" class="experience">
+        <div class="experience-wrapper">
+          <h1>My experience!</h1>
+          <ul class="sessions">
+            <li>
+              <h3>7th of March, 2004</h3>
+              <p>Oh hey! The day of my birth!</p>
+            </li>
+            <li>
+              <h3>2016-2018</h3>
+              <p>
+                Started writing Discord.js bot by copy pasting code online and
+                asking friends for help
+              </p>
+            </li>
+            <li>
+              <h3>2019</h3>
+              <p>
+                Got into Redstone in Minecraft and was tutored with building a
+                CPU in the game.
+              </p>
+            </li>
+            <li>
+              <h3>2020</h3>
+              <p>
+                I begun gaining more coding experiences, in languages like
+                JavaScript (Node.js runtime), Zig & Python.
+              </p>
+            </li>
+            <li>
+              <h3>August of 2020</h3>
+              <p>I started my first year of Gymnasium</p>
+            </li>
+            <li>
+              <h3>2021</h3>
+              <p>
+                Finished most of my projects like imbed, Brainf*ckToZig,
+                ZigF*ck, AinsBOT, Khaos Utils, MonoPew & more
+              </p>
+            </li>
+            <li>
+              <h3>Current year</h3>
+              <p>
+                Just focusing on graduating school, stay tuned for more
+                projects!
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div x-show="page === 'servers'">

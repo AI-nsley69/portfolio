@@ -85,6 +85,7 @@ header {
   font-weight: 600;
   font-family: "Poppins";
   min-height: 20%;
+  z-index: 1;
 }
 
 .selected a {
@@ -252,6 +253,77 @@ footer {
 }
 
 /* Portfolio End */
+
+/* Experience start */
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.experience-wrapper {
+  background: #eaf6ff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 70%;
+  text-align: left;
+}
+
+.experience h1 {
+  color: #3d3d3d;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
+.sessions {
+  border-radius: 12px;
+  position: relative;
+}
+
+.experience h3 {
+  color: #2a2839;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.experience li {
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.experience li:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+
+.experience li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.experience p {
+  line-height: 1.5;
+  color: #4f4f4f;
+  font-size: 0.8em;
+  margin-top: 0;
+  margin: 0;
+}
+
+/* Experience end */
 
 /* Home start */
 
@@ -425,6 +497,10 @@ main {
     width: 3em;
     height: 3em;
   }
+  .experience-wrapper {
+    padding: 0.4rem;
+    width: 90%;
+  }
   footer {
     font-size: 0.6em !important;
   }
@@ -433,7 +509,7 @@ main {
     height: 18px;
   }
   header {
-    font-size: 0.48em !important;
+    font-size: 0.4em !important;
   }
 }
 
