@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- DNS Prefetch & preconnect to fonts -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <!-- Preload stylesheet & fonts -->
-    <link rel="preload" as="style" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap">
-    <link rel="preload" as="style" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="icon" href="assets/icon.webp">
+    <link
+      rel="preload"
+      as="style"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins:400|Quicksand:400&display=swap"
+    />
+    <link rel="preload" as="style" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" href="assets/icon.webp" />
     <title>Ainsley</title>
     <!-- Meta content to support Discord embeds -->
     <meta content="Hello, I'm Ainsley!" property="og:title" />
@@ -20,90 +28,428 @@
     <meta content="https://portfolio.trainsley69.me" property="og:url" />
     <meta content="assets/icon.webp" property="og:image" />
     <meta content="#dcdcdc" data-react-helmet="true" name="theme-color" />
+    <!-- AlpineJS import -->
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <!-- GoatCounter Analytics: "Easy web analytics. No tracking of personal data." -->
-    <script defer data-goatcounter="https://stats.trainsley69.me/count" async src="//gc.zgo.at/count.js"></script>
+    <script
+      defer
+      data-goatcounter="https://stats.trainsley69.me/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
   </head>
-  <!-- Header -->
-  <header>
-    <!-- Navbar for all of the contact information -->
-    <nav>
-      <div class="selected">
+
+  <!-- Body -->
+
+  <body
+    x-data="{page: 'home', pages: ['home', 'contact', 'portfolio', 'servers']}"
+  >
+    <!-- Header -->
+    <header>
+      <nav>
+        <template x-for="button in pages" :key="button">
+          <div :class="{ 'selected': page === button }" @click="page = button">
+            <img
+              src="./assets/header/home.png"
+              alt="Profile Icon"
+              loading="lazy"
+            />
+            <a x-text="button"></a>
+          </div>
+        </template>
+        <!-- <div class="selected">
         <img src="./assets/header/home.png" alt="Profile Icon" loading="lazy">
-        <a href="/">Home</a>
+        <a @click="page = 'home'">Home</a>
       </div>
       <div>
         <img src="./assets/header/contact.png" alt="Email Icon" loading="lazy">
-        <a href="/contact">Contact Me</a>
+        <a @click="page = 'contact'">Contact Me</a>
       </div>
       <div>
         <img src="./assets/header/portfolio.png" alt="Portfolio Icon" loading="lazy">
-        <a href="/portfolio">Portfolio</a>
+        <a @click="page = ''">Portfolio</a>
       </div>
       <div>
         <img src="./assets/header/servers.png" alt="Server Icon" loading="lazy">
         <a href="/servers">Servers</a>
-      </div>
-    </nav>
-  </header>
-  <!-- Body -->
-
-  <body>
+      </div> -->
+      </nav>
+    </header>
     <!-- home class for home page formatting -->
-    <main class="home">
-      <!-- Typewriter effect for this header, makes it fancy but has some performance impact -->
-      <div class="typewriter-container">
-        <h3 class="typewriter">Hello, I'm Ainsley!</h3>
+    <main>
+      <div x-show="page === 'home'" class="home">
+        <!-- Typewriter effect for this header, makes it fancy but has some performance impact -->
+        <div class="typewriter-container">
+          <h3 class="typewriter">Hello, I'm Ainsley!</h3>
+        </div>
+        <!-- 
+                  Below are seperate paragraphs with margin between each, describes stuff about me 
+                  Has fancy animation when hovering over link, although links are visible
+                  through header. TODO: fix that
+              -->
+        <p>
+          I am an 18 year old student from Sweden & a computer enthusiast. I
+          enjoy activities like selfhosting, programming & hardware.
+        </p>
+        <p>
+          I have been using Linux since the fall of 2020, starting off with
+          <a href="https://pop.system76.com/">Pop!_OS</a> until I switched to
+          <a href="https://voidlinux.org">VoidLinux</a> half a year later & been
+          using it since. I am currently running
+          <a href="https://www.proxmox.com/en/">Proxmox</a>,
+          <a href="https://www.debian.org/">Debian</a>,
+          <a href="https://ubuntu.com/">Ubuntu</a>,
+          <a href="https://www.openbsd.org/">OpenBSD</a>,
+          <a href="https://www.oracle.com/linux/">Oracle Linux</a> &
+          <a href="https://archlinux.org/">ArchLinux</a> across several servers.
+        </p>
+        <p>
+          I also enjoy doing Redstone in
+          <a href="https://www.minecraft.net/en-us">Minecraft</a>, such as
+          complex piston doors, computational machines, survival farms & ideas I
+          find entertaining.
+        </p>
+        <p>
+          I have also coded in several languages such as
+          <a href="https://ziglang.org/">Zig</a>,
+          <a href="https://nodejs.org/en/">Node.js</a>,
+          <a href="https://www.python.org/">Python</a> & more languages with
+          less experience.
+        </p>
       </div>
-      <!-- 
-                Below are seperate paragraphs with margin between each, describes stuff about me 
-                Has fancy animation when hovering over link, although links are visible
-                through header. TODO: fix that
-            -->
-      <p>
-        I am an 18 year old student from Sweden & a computer enthusiast.
-        I enjoy activities like selfhosting, programming & hardware.
-      </p>
-      <p>
-        I have been using Linux since the fall of 2020, starting off with
-        <a href="https://pop.system76.com/">Pop!_OS</a> until I switched to
-        <a href="https://voidlinux.org">VoidLinux</a> half a year later & been using it since.
-        I am currently running <a href="https://www.proxmox.com/en/">Proxmox</a>,
-        <a href="https://www.debian.org/">Debian</a>,
-        <a href="https://ubuntu.com/">Ubuntu</a>,
-        <a href="https://www.openbsd.org/">OpenBSD</a>,
-        <a href="https://www.oracle.com/linux/">Oracle Linux</a> &
-        <a href="https://archlinux.org/">ArchLinux</a> across several servers.
-      </p>
-      <p>
-        I also enjoy doing Redstone in <a href="https://www.minecraft.net/en-us">Minecraft</a>,
-        such as complex piston doors, computational machines, survival farms & ideas I find entertaining.
-      </p>
-      <p>
-        I have also coded in several languages such as
-        <a href="https://ziglang.org/">Zig</a>,
-        <a href="https://nodejs.org/en/">Node.js</a>,
-        <a href="https://www.python.org/">Python</a> & more languages with less experience.
-      </p>
+
+      <div x-show="page === 'contact'">
+        <form
+          target="_blank"
+          action="https://formsubmit.co/not@trainsley69.me"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_url"
+            value="https://portfolio.trainsley69.me/contact"
+          />
+          <input
+            type="text"
+            name="name"
+            class="contact-input"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="contact-input"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            type="content"
+            name="message"
+            class="contact-input contact-content"
+            placeholder="Your inquiry"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="portfolio-list" x-show="page === 'portfolio'">
+        <!-- Each div with portfolio-div class becomes its own card for each project -->
+        <a href="https://github.com/AI-nsley69/AinsBOT"
+          ><div class="portfolio-div">
+            <div>
+              <img
+                src="assets/ainsbot.webp"
+                alt="AinsBOT Profile Picture"
+                loading="lazy"
+              />
+              <h3 class="portfolio">AinsBOT</h3>
+            </div>
+            <p>A multi-purpose Discord Bot written in Node.js</p>
+          </div></a
+        >
+        <a href="https://github.com/KhaosMC/khaos-utils"
+          ><div class="portfolio-div">
+            <div>
+              <img src="assets/khaos.webp" alt="KhaosMC Logo" loading="lazy" />
+              <h3 class="portfolio">Khaos Utils</h3>
+            </div>
+            <p>
+              A special-purpose Discord Bot written in Node.js for a Minecraft
+              community.
+            </p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/imbed"
+          ><div class="portfolio-div">
+            <div>
+              <img src="assets/zig.webp" alt="Ziglang Icon" loading="lazy" />
+              <h3 class="portfolio">imbed</h3>
+            </div>
+            <p>
+              A small program to embed any data into an image written in Zig
+            </p>
+          </div></a
+        >
+        <a
+          ><div class="portfolio-div">
+            <div>
+              <img
+                src="assets/mcrisc1608.webp"
+                alt="Minecraft CPU"
+                loading="lazy"
+              />
+              <h3 class="portfolio">MCRISC1608</h3>
+            </div>
+            <p>A RISC-inspired Minecraft CPU built with Redstone</p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/ZigFuck"
+          ><div class="portfolio-div">
+            <div>
+              <img
+                src="assets/brainfuck.webp"
+                alt="Brainfuck Icon"
+                loading="lazy"
+              />
+              <h3 class="portfolio">ZigF*ck</h3>
+            </div>
+            <p>A small Brainf*ck interpreter written in Zig</p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/BrainfuckToZig"
+          ><div class="portfolio-div">
+            <div>
+              <img
+                src="assets/brainfuck.webp"
+                alt="Brainfuck Icon"
+                loading="lazy"
+              />
+              <h3 class="portfolio">Brainf*ckToZig</h3>
+            </div>
+            <p>A small Brainf*ck transpilerto & in Zig</p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/ZigBrot"
+          ><div class="portfolio-div">
+            <div>
+              <h3 class="portfolio">ZigBrot</h3>
+              <img
+                src="assets/mandelbrot.webp"
+                alt="Mandelbrot Set"
+                loading="lazy"
+              />
+            </div>
+            <p>A simple (multithreaded) Mandelbrot renderer written in Zig</p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/true-all-of-fabric"
+          ><div class="portfolio-div">
+            <div>
+              <img
+                src="assets/aof.webp"
+                alt="All of Fabric Icon"
+                loading="lazy"
+              />
+              <h3 class="portfolio">True All Of Fabric</h3>
+            </div>
+            <p>A python script to fetch all Fabric mods from Modrinth.</p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/MonoPew"
+          ><div class="portfolio-div">
+            <div>
+              <img
+                src="assets/monogame.webp"
+                alt="MonoGame Icon"
+                loading="lazy"
+              />
+              <h3 class="portfolio">MonoPew</h3>
+            </div>
+            <p>
+              A small space invaders-like game created in C# with the MonoGame
+              framework as a school assignment.
+            </p>
+          </div></a
+        >
+        <a href="https://github.com/KismetNetwork/Luckperms-Group-Whitelist"
+          ><div class="portfolio-div">
+            <div>
+              <img src="assets/github.webp" alt="Github Icon" loading="lazy" />
+              <h3 class="portfolio">Luckperms Group Whitelist</h3>
+            </div>
+            <p>
+              A small <a href="https://velocitypowered.com">Velocity</a> plugin
+              in Java which allows connections from certain LuckPerms groups to
+              a certain server.
+            </p>
+          </div></a
+        >
+        <a href="https://github.com/AI-nsley69/repl-api"
+          ><div class="portfolio-div">
+            <div>
+              <img src="assets/repl.webp" alt="Repl.it Icon" loading="lazy" />
+              <h3 class="portfolio">Repl API</h3>
+            </div>
+            <p>A nodejs express app for my own personal API usages</p>
+          </div></a
+        >
+        <a
+          ><div class="portfolio-div">
+            <div>
+              <img src="assets/icon.webp" alt="Discord Icon" loading="lazy" />
+              <h3 class="portfolio">Honorable Mentions</h3>
+            </div>
+            <p>
+              <a href="https://github.com/void-linux/void-packages/pull/34688"
+                >Link</a
+              >
+              - VoidLinux Package Repository Contribution<br />
+              <a
+                href="https://github.com/login/oauth/authorize?client_id=7e0a3cd836d3e544dbd9&redirect_uri=https%3A%2F%2Fgist.github.com%2Fauth%2Fgithub%2Fcallback%3Freturn_to%3Dhttps%253A%252F%252Fgist.github.com%252FAI-nsley69%252Fe87714265a36a4662cfeeaacba312be0&response_type=code&state=12267da297359b56f55090c3a21f7ed8b5e500caa4a538683d0c227fb43fdd87"
+                >Link</a
+              >
+              - Minecraft server setup guide on Oracle Cloud Always Free
+            </p>
+          </div></a
+        >
+      </div>
+
+      <div x-show="page === 'servers'">
+        <!-- the div class servers formats a card, each of this div with said class is its own card -->
+        <div class="servers">
+          <h2>Homelab</h2>
+          <h4>Hardware</h4>
+          <p>
+            HP DL380P Generation 8 server with 2x Intel Xeon E5-2680 and 32GB
+            DDR3 ECC.
+          </p>
+          <h4>Setup</h4>
+          <p>
+            Powered by Proxmox, it is using LXC for containers, with everything
+            behind a
+            <a href="https://www.pfsense.org/">pfsense</a> instance. To allow
+            for harder security, better monitoring & vpn gateways, scanning
+            packets to prevent any intrustion attacks with
+            <a href="https://www.snort.org/">Snort</a> &
+            <a href="http://www.squid-cache.org/">Squid Proxy</a> for caching
+            and scan downloads for malicious content with
+            <a href="https://www.clamav.net/">ClamAV</a>. The services exposed
+            through a reverse proxy called
+            <a href="https://caddyserver.com/">Caddy</a>
+            for automatic SSL certificates and using multiple services with on
+            port 443.
+          </p>
+          <h4>Services</h4>
+          <p>
+            I currently run <a href="https://gitea.io/en-us/">Gitea</a>,
+            <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a
+            >, <a href="https://jellyfin.org/">Jellyfin</a>,
+            <a href="https://jellyfin.org/">Jenkins</a>,
+            <a href="https://js.wiki/">Wiki.js</a> and much more
+          </p>
+          <h4>Usage</h4>
+          <p>
+            With my own homelab I have the possibility to run 24/7 applications
+            of my own, or use them for my personal projects like my own Git
+            server, control over my password manager, personal build server for
+            projects which produces AOT binaries & Wiki to document my hosting
+            processes
+          </p>
+        </div>
+        <div class="servers">
+          <h2>Archbox</h2>
+          <h4>Hardware</h4>
+          <p>Asus Aspire 4820 with Intel i3 M 380 & 4GB of DDR3 RAM</p>
+          <h4>Setup</h4>
+          <p>
+            This server, as you can infer from the name, is running ArchLinux
+          </p>
+          <h4>Services</h4>
+          <p>
+            This server is running
+            <a href="https://velocitypowered.com/">Velocity Proxy</a> & my
+            personal
+            <a href="https://github.com/AI-nsley69/AinsBOT">Discord bot</a>
+          </p>
+          <h4>Usage</h4>
+          <p>
+            This machine was setup with the intention of maintaining a Minecraft
+            proxy for my technical Minecraft servers. It allows the players to
+            easily switch between the servers through an in-game command, rather
+            than logging in and out of them. I also run my personal discord bot
+            on this server as it had the spare resources for it
+          </p>
+        </div>
+        <div class="servers">
+          <h2>Debianbox</h2>
+          <h4>Hardware</h4>
+          <p>
+            Retired custom-built desktop, Intel i7-2600K with 8GB of DDR3 RAM
+          </p>
+          <h4>Setup</h4>
+          <p>
+            Alike the Archbox, the OS can be infered from the name, as it is
+            running Debian.
+          </p>
+          <h4>Services</h4>
+          <p>
+            This server is running 3 Minecraft servers: A Survival, Creative &
+            Creative Copy of the Survival World
+          </p>
+          <h4>Usage</h4>
+          <p>
+            This machine is running the backend Minecraft server for the proxy
+            on Archbox. It is purely for a technical community server where we
+            try to utilize bugs inside Minecraft to allow for incredible stuff
+            in-game.
+          </p>
+        </div>
+      </div>
     </main>
-  </body>
-  <!-- 
+    <!-- 
         Footer
         Contains a div for the left side, individually seperated. TODO: fix
         Contains a navbar for icons on the right 
     -->
-  <footer>
-    <div class="footertext">
-      <a href="https://github.com/AI-nsley69/portfolio">Source</a>
-      |
-      <a href="https://stats.trainsley69.me/">Stats</a>
-    </div>
-    <nav>
-      <a href="https://about.trainsley69.me/discord" title="Project Wonderland"><img src="assets/discord.webp" alt="Discord Profile Picture" loading="lazy"></a>
-      <a href="https://github.com/AI-nsley69" title="AI-nsley69"><img src="assets/github.webp" alt="Github icon" loading="lazy"></a>
-      <a href="https://www.youtube.com/channel/UCTcMr19KsC2L6b4pQmw3KuA" title="Trainsley69"><img src="assets/youtube.webp" alt="Youtube icon" loading="lazy"></a>
-      <a href="https://twitter.com/trainsley69" title="Trainsley69"><img src="assets/twitter.webp" alt="Twitter icon" loading="lazy"></a>
-      <a href="https://www.reddit.com/user/GengusDad" title="GengusDad"><img src="assets/reddit.webp" alt="Reddit icon" loading="lazy"></a>
-    </nav>
-  </footer>
-
+    <footer>
+      <div class="footertext">
+        <a href="https://github.com/AI-nsley69/portfolio">Source</a>
+        |
+        <a href="https://stats.trainsley69.me/">Stats</a>
+      </div>
+      <nav>
+        <a
+          href="https://about.trainsley69.me/discord"
+          title="Project Wonderland"
+          ><img
+            src="assets/discord.webp"
+            alt="Discord Profile Picture"
+            loading="lazy"
+        /></a>
+        <a href="https://github.com/AI-nsley69" title="AI-nsley69"
+          ><img src="assets/github.webp" alt="Github icon" loading="lazy"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCTcMr19KsC2L6b4pQmw3KuA"
+          title="Trainsley69"
+          ><img src="assets/youtube.webp" alt="Youtube icon" loading="lazy"
+        /></a>
+        <a href="https://twitter.com/trainsley69" title="Trainsley69"
+          ><img src="assets/twitter.webp" alt="Twitter icon" loading="lazy"
+        /></a>
+        <a href="https://www.reddit.com/user/GengusDad" title="GengusDad"
+          ><img src="assets/reddit.webp" alt="Reddit icon" loading="lazy"
+        /></a>
+      </nav>
+    </footer>
+  </body>
 </html>
