@@ -298,7 +298,8 @@ footer {
 
 .experience li:last-child {
   border: 0px;
-  padding-bottom: 0;
+  margin-bottom: -18px;
+  padding-bottom: 10px;
 }
 
 .experience li:before {
