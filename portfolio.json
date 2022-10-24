@@ -1,0 +1,70 @@
+{
+  "cards": [
+    {
+      "title": "AinsBOT",
+      "link": "https://github.com/AI-nsley69/AinsBOT",
+      "img": "assets/ainsbot.webp",
+      "desc": "A multi-purpose Discord Bot written in Node.js"
+    },
+    {
+      "title": "Khaos Utils",
+      "link": "https://github.com/KhaosMC/khaos-utils",
+      "img": "assets/khaos.webp",
+      "desc": "A special-purpose Discord Bot written in Node.js for a Minecraft community."
+    },
+    {
+      "title": "imbed",
+      "link": "https://github.com/AI-nsley69/imbed",
+      "img": "assets/zig.webp",
+      "desc": "A small program to embed any data into an image written in Zig"
+    },
+    {
+      "title": "MCRISC1608",
+      "link": "",
+      "img": "assets/mcrisc1608.webp",
+      "desc": "A RISC-inspired Minecraft CPU built with Redstone"
+    },
+    {
+      "title": "ZigF*ck",
+      "link": "https://github.com/AI-nsley69/ZigFuck",
+      "img": "assets/brainfuck.webp",
+      "desc": "A small Brainf*ck interpreter written in Zig"
+    },
+    {
+      "title": "Brainf*ckToZig",
+      "link": "https://github.com/AI-nsley69/BrainfuckToZig",
+      "img": "assets/brainfuck.webp",
+      "desc": "A small Brainf*ck transpilerto & in Zig"
+    },
+    {
+      "title": "ZigBrot",
+      "link": "https://github.com/AI-nsley69/ZigBrot",
+      "img": "assets/mandelbrot.webp",
+      "desc": "A simple (multithreaded) Mandelbrot renderer written in Zig"
+    },
+    {
+      "title": "True All Of Fabric",
+      "link": "https://github.com/AI-nsley69/true-all-of-fabric",
+      "img": "assets/aof.webp",
+      "desc": "A python script to fetch all Fabric mods from Modrinth."
+    },
+    {
+      "title": "MonoPew",
+      "link": "https://github.com/AI-nsley69/MonoPew",
+      "img": "assets/monogame.webp",
+      "desc": "A small space invaders-like game created in C# with the MonoGame framework as a school assignment."
+    },
+    {
+      "title": "Luckperms Whitelist",
+      "link": "https://github.com/KismetNetwork/Luckperms-Group-Whitelist",
+      "img": "assets/github.webp",
+      "desc": "A small Velocity plugin in Java which allows connections from certain LuckPerms groups to a certain server."
+    },
+    {
+      "title": "Repl.it API",
+      "link": "https://github.com/AI-nsley69/repl-api",
+      "img": "assets/repl.webp",
+      "desc": "A nodejs express app for my own personal API usages"
+    }
+  ]
+}
