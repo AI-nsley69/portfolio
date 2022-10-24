@@ -294,12 +294,12 @@ footer {
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
+  margin-bottom: -18px;
+  padding-bottom: 10px;
 }
 
 .experience li:last-child {
   border: 0px;
-  margin-bottom: -18px;
-  padding-bottom: 10px;
 }
 
 .experience li:before {
