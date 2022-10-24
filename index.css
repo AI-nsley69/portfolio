@@ -110,6 +110,16 @@ footer img {
   width: 28px;
   margin-left: 4px;
   border-radius: 0.3em;
+  transition: transform 0.2s ease-in-out;
+}
+
+footer img:hover {
+  transform: translateY(-4px) translateX(2px);
+  box-shadow: -2px 3px 8px rgba(255, 255, 255, 0.5);
+}
+
+footer img:active {
+  transform: translate(0px) scale(0.98);
 }
 
 .footertext {
