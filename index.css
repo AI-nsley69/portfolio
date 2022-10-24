@@ -182,8 +182,12 @@ footer {
     font-size: 1.4em;
 }
 
-.portfolio-div h3:hover {
+.portfolio-div:hover {
     transform: scale(1.02);
+}
+
+.portfolio-div:active {
+    transform: scale(0.98);
 }
 
 .portfolio-div {
@@ -200,6 +204,7 @@ footer {
     min-height: 10em;
     margin-bottom: 2em;
     line-height: 1.2em;
+    transition: transform .1s ease-in-out;
 }
 
 .portfolio-div div {
