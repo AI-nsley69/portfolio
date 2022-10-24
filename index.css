@@ -170,7 +170,12 @@ footer {
     order: 1;
 }
 
-.portfolio a {
+.portfolio-list a {
+    display: contents;
+    text-decoration: none;
+}
+
+.portfolio-div h3 {
     color: var(--link);
     font-weight: bolder;
     text-decoration: none;
@@ -191,32 +196,32 @@ footer {
     border-radius: 10px;
     margin: auto;
     align-items: center;
-    max-width: 25%;
+    width: 35%;
+    min-height: 10em;
     margin-bottom: 2em;
     line-height: 1.2em;
+}
+
+.portfolio-div div {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center space-evenly;
+    align-items: center;
 }
 
 .portfolio-div p {
     order: 2;
     margin: auto;
-    max-height: 0;
-    opacity: 0;
-    transition: all 0.8s ease-in-out;
-}
-
-.portfolio-div:hover p {
-    max-height: 60vh;
-    opacity: 1;
-    transition: all 0.8s ease-in-out;
 }
 
 .portfolio-div img {
     order: 0;
     float: left;
-    width: 7em;
-    height: 7em;
-    border-radius: 999999px;
+    width: 4em;
+    height: 4em;
+    border-radius: 0.5em;
     margin-bottom: 0.5em;
+    margin-right: 1em;
 }
 
 /* Portfolio End */
@@ -325,6 +330,13 @@ main {
     }
     .portfolio a {
         font-size: 22px;
+    }
+    .portfolio-div {
+        width: 70%;
+    }
+    .portfolio-div img {
+        width: 3em;
+        height: 3em;
     }
     footer {
         font-size: 0.6em !important;
