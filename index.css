@@ -4,6 +4,7 @@
   --darker: #121212;
   --dark: #161616;
   --header: #a8a6ba;
+  --header-small: #e7feff;
   --card: #1f1b24;
   --text: #f8f8ff;
   --link: #cf6679;
@@ -263,15 +264,15 @@ footer {
 }
 
 .experience-wrapper {
-  background: #eaf6ff;
-  padding: 2rem;
+  background: var(--card);
+  padding: 1.2rem;
   border-radius: 15px;
   width: 70%;
   text-align: left;
 }
 
 .experience h1 {
-  color: #3d3d3d;
+  color: var(--header);
   font-size: 1.1em;
   font-family: sans-serif;
 }
@@ -282,7 +283,7 @@ footer {
 }
 
 .experience h3 {
-  color: #2a2839;
+  color: var(--header-small);
   font-weight: 600;
   font-size: 0.8em;
   padding-bottom: 0;
@@ -290,12 +291,13 @@ footer {
 }
 
 .experience li {
-  border-left: 1px solid #abaaed;
+  border-left: 1px solid var(--link);
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
   margin-bottom: -18px;
   padding-bottom: 10px;
+  list-style: none;
 }
 
 .experience li:last-child {
@@ -307,9 +309,9 @@ footer {
   width: 15px;
   height: 15px;
   background: white;
-  border: 1px solid #4e5ed3;
-  box-shadow: 3px 3px 0px #bab5f8;
-  box-shadow: 3px 3px 0px #bab5f8;
+  border: 1px solid var(--link);
+  box-shadow: 3px 3px 0px var(--link);
+  box-shadow: 3px 3px 0px var(--link);
   border-radius: 50%;
   position: absolute;
   left: -10px;
@@ -318,7 +320,7 @@ footer {
 
 .experience p {
   line-height: 1.5;
-  color: #4f4f4f;
+  color: var(--text);
   font-size: 0.8em;
   margin-top: 0;
   margin: 0;
@@ -560,4 +562,8 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff12;
+}
+
+[x-cloak] {
+  display: none !important;
 }

@@ -68,7 +68,7 @@
     </header>
     <!-- home class for home page formatting -->
     <main>
-      <div x-show="page === 'home'" class="home">
+      <div x-show="page === 'home'" class="home" x-cloak>
         <!-- Typewriter effect for this header, makes it fancy but has some performance impact -->
         <div class="typewriter-container">
           <h3 class="typewriter">Hello, I'm Ainsley! 👋</h3>
@@ -95,7 +95,7 @@
         </p>
       </div>
 
-      <div x-show="page === 'contact'">
+      <div x-show="page === 'contact'" x-cloak>
         <form
           target="_blank"
           action="https://formsubmit.co/not@trainsley69.me"
@@ -136,6 +136,7 @@
         x-show="page === 'portfolio'"
         x-data="{cards: []}"
         x-init="fetch('https://portfolio.trainsley69.me/portfolio.json').then(response => response.json()).then(data => cards = data.cards)"
+        x-cloak
       >
         <!-- Each div with portfolio-div class becomes its own card for each project -->
         <template x-for="card in cards" :key="card">
@@ -170,7 +171,7 @@
         > -->
       </div>
 
-      <div x-show="page === 'experience'" class="experience">
+      <div x-show="page === 'experience'" class="experience" x-cloak>
         <div class="experience-wrapper">
           <h1>My experience!</h1>
           <ul class="sessions">
@@ -221,7 +222,7 @@
         </div>
       </div>
 
-      <div x-show="page === 'servers'">
+      <div x-show="page === 'servers'" x-cloak>
         <!-- the div class servers formats a card, each of this div with said class is its own card -->
         <div class="servers">
           <h2>Homelab</h2>
