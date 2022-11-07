@@ -389,7 +389,7 @@ main form {
 }
 
 .contact-input:focus {
-  border: 2px solid #bc3d55;
+  border: 2px solid #b5233d;
 }
 
 [type="submit"] {
