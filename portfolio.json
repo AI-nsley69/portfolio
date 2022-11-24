@@ -7,6 +7,12 @@
       "desc": "A multi-purpose Discord Bot written in Node.js"
     },
     {
+      "title": "I Suck",
+      "link": "https://github.com/AI-nsley69/i-suck",
+      "img": "assets/github.webp",
+      "desc": "A novice Minecraft hack mod for Fabric"
+    },
+    {
       "title": "Khaos Utils",
       "link": "https://github.com/KhaosMC/khaos-utils",
       "img": "assets/khaos.webp",
