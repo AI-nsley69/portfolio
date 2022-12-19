@@ -7,6 +7,12 @@
       "desc": "A multi-purpose Discord Bot written in Node.js"
     },
     {
+      "title": "nyasharp",
+      "link": "https://github.com/AI-nsley69/nyasharp",
+      "img": "assets/github.webp",
+      "desc": "An esoteric programming language with emoticons written in C#"
+    },
+    {
       "title": "I Suck",
       "link": "https://github.com/AI-nsley69/i-suck",
       "img": "assets/github.webp",
@@ -29,6 +35,12 @@
       "link": "",
       "img": "assets/mcrisc1608.webp",
       "desc": "A RISC-inspired Minecraft CPU built with Redstone"
+    },
+    {
+      "title": "GoF*ck",
+      "link": "https://github.com/AI-nsley69/GoFuck",
+      "img": "assets/brainfuck.webp",
+      "desc": "A Brainf*ck interpreter written in Zig with some optimizations"
     },
     {
       "title": "ZigF*ck",
