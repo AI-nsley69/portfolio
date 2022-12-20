@@ -40,7 +40,7 @@
       "title": "GoF*ck",
       "link": "https://github.com/AI-nsley69/GoFuck",
       "img": "assets/brainfuck.webp",
-      "desc": "A Brainf*ck interpreter written in Zig with some optimizations"
+      "desc": "A Brainf*ck interpreter written in Go with some optimizations"
     },
     {
       "title": "ZigF*ck",
