@@ -1,30 +1,30 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <header
+    class="w-full min-h-fit h-16 flex align-middle justify-start py-2 px-4"
+  >
+    <button
+      v-for="(item, index) of pages"
+      :key="index"
+      class="flex flex-row align-middle justify-center"
+    >
+      <fa-icon :icon="item.icon"></fa-icon>
+      <span class="flex-1">{{ item.title }}</span>
+    </button>
+  </header>
 </template>
 
+<script setup lang="ts">
+const pages = [
+  {
+    component: () => import("./pages/About.vue"),
+    title: "About",
+    icon: "user",
+  },
+];
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+header {
+  background-color: #121212;
 }
 </style>
