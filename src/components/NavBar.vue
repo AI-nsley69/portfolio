@@ -6,10 +6,13 @@
       id="logo"
       class="flex flex-col items-center justify-center h-24 w-full gap-2 xl:gap-4"
     >
-      <img src="/logo.jpg" alt="logo" class="h-full w-full" />
+      <img src="/logo.jpg" alt="logo" class="h-full w-full rounded-md" />
       <div class="border-b-2 border-solid border-gray-400 w-11/12"></div>
     </div>
-    <div id="content" class="flex flex-1 flex-col items-center justify-center">
+    <div
+      id="content"
+      class="flex flex-1 flex-col items-center justify-start py-2 xl:py-4"
+    >
       <p>Hello World!</p>
     </div>
   </div>
