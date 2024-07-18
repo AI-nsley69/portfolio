@@ -11,10 +11,17 @@
       Hello, I'm Benjamin! 👋
     </h1>
     <h2 class="text-lg xl:text-2xl">Software Engineer</h2>
+    <h3>I'm a {{ age }} year old developer from Sweden.</h3>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const birthday = new Date(2004, 3, 7);
+const years_in_milli = 365 * 24 * 60 * 60 * 1000;
+const age = Math.floor(
+  (new Date().getTime() - birthday.getTime()) / years_in_milli,
+);
+</script>
 
 <style scoped>
 #bg-img {
