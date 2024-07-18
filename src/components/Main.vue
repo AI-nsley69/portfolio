@@ -17,9 +17,9 @@
 
 <script setup lang="ts">
 const birthday = new Date(2004, 3, 7);
-const years_in_milli = 365 * 24 * 60 * 60 * 1000;
+const yearsInMilliseconds = 365 * 24 * 60 * 60 * 1000;
 const age = Math.floor(
-  (new Date().getTime() - birthday.getTime()) / years_in_milli,
+  (new Date().getTime() - birthday.getTime()) / yearsInMilliseconds,
 );
 </script>
 
