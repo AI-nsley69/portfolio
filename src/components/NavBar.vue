@@ -13,13 +13,20 @@
       id="content"
       class="flex flex-1 flex-col items-center justify-start py-2 lg:py-4"
     >
-      <img src="/icons/briefcase.svg" class="w-2/5 rounded-md filter-white cursor-pointer">
+      <img src="/icons/briefcase.svg" class="w-2/5 rounded-md filter-white cursor-pointer" @click="triggerScroll('#projects')">
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+function triggerScroll(id: string) {
+    const el = document.querySelector(id);
+    el?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest',
+    });
+}
 </script>
 
 <style scoped>

@@ -3,10 +3,11 @@
         <!-- Overlay -->
          <Email />
         <!-- Site components -->
-        <Introduction />
+        <Introduction id="home"/>
         <!-- Work experience -->
-        <Projects />
+        <Projects id="projects"/>
         <!-- Skills -->
+        <!-- Footer -->
     </section>
 </template>
 

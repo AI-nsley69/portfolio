@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="min-h-screen flex flex-col px-4">
+    <section class="min-h-screen flex flex-col px-4">
         <h2 class="text-2xl w-full text-left">Projects</h2>
         <div class="w-1/5 border-b-2 border-white border-solid mb-4"></div>
         <ul class="flex flex-row flex-wrap gap-4 w-full justify-center">
