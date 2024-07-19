@@ -4,24 +4,28 @@
          <Email />
         <!-- Site components -->
         <Introduction id="home"/>
-        <!-- Work experience -->
+        <WorkExperience id="work-experience" />
         <Projects id="projects"/>
-        <!-- Skills -->
+        <Skills id="skills" />
         <!-- Footer -->
     </section>
 </template>
 
 <script setup lang="ts">
 import { defineComponent } from 'vue';
-import Introduction from './Main/Introduction.vue';
-import Projects from './Main/Projects.vue';
 import Email from './Email.vue';
+import Introduction from './Main/Introduction.vue';
+import WorkExperience from './Main/WorkExperience.vue';
+import Projects from './Main/Projects.vue';
+import Skills from './Main/Skills.vue'
 
 defineComponent({
     components: {
-        Introduction,
-        Projects,
         Email,
+        Introduction,
+        WorkExperience,
+        Projects,
+        Skills,
     }
 })
 </script>

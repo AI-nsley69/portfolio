@@ -11,26 +11,40 @@
     </div>
     <div
       id="content"
-      class="flex flex-1 flex-col items-center justify-start py-2 lg:py-4"
+      class="flex flex-1 flex-col items-center justify-start py-2 lg:py-4 gap-4"
     >
-      <img src="/icons/briefcase.svg" class="w-2/5 rounded-md filter-white cursor-pointer" @click="triggerScroll('#projects')">
+      <img
+        src="/icons/person-digging.svg"
+        class="w-2/5 rounded-md filter-white cursor-pointer"
+        @click="triggerScroll('#work-experience')"
+      />
+      <img
+        src="/icons/briefcase.svg"
+        class="w-2/5 rounded-md filter-white cursor-pointer"
+        @click="triggerScroll('#projects')"
+      />
+      <img
+        src="/icons/gears.svg"
+        class="w-2/5 rounded-md filter-white cursor-pointer"
+        @click="triggerScroll('#skills')"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 function triggerScroll(id: string) {
-    const el = document.querySelector(id);
-    el?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'end',
-        inline: 'nearest',
-    });
+  const el = document.querySelector(id);
+  el?.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
 }
 </script>
 
 <style scoped>
 .filter-white {
-    filter: invert(100%)
+  filter: invert(100%);
 }
 </style>
