@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-start w-24 h-screen border-gray-400 border-r-2 border-solid p-1"
+    class="flex flex-col items-center justify-start w-24 h-screen border-gray-400 border-r-2 border-solid p-1 lg:p-2"
   >
     <div
       id="logo"
@@ -11,13 +11,19 @@
     </div>
     <div
       id="content"
-      class="flex flex-1 flex-col items-center justify-start py-2 xl:py-4"
+      class="flex flex-1 flex-col items-center justify-start py-2 lg:py-4"
     >
-      <p>Hello World!</p>
+      <img src="/icons/briefcase.svg" class="w-2/5 rounded-md filter-white cursor-pointer">
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
 
-<style scoped></style>
+</script>
+
+<style scoped>
+.filter-white {
+    filter: invert(100%)
+}
+</style>

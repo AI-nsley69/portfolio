@@ -2,7 +2,7 @@ const darkMode = {
   primary: "#121212",
   secondary: "#121212",
   outline: "#242424",
-  accent: "#121212",
+  accent: "#800000",
   text: "#ffffff",
 };
 
