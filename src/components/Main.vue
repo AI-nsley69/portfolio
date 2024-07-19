@@ -4,7 +4,9 @@
          <Email />
         <!-- Site components -->
         <Introduction />
+        <!-- Work experience -->
         <Projects />
+        <!-- Skills -->
     </section>
 </template>
 
