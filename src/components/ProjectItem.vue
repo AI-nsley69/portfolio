@@ -1,5 +1,16 @@
 <template>
-  <div class="bg-transparent lg:w-2/5 sm:w-5/6 lg:h-48 sm:h-64 flex flex-col justify-center items-center">
+  <li
+    class="lg:w-2/5 sm:4/5 relative overflow-hidden rounded-lg border bg-transparent select-none hover:shadow hover:shadow-teal-200 p-2"
+  >
+    <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+      <img :src="`${icon}`" class="h-12 w-12 fill-current rounded-md" />
+      <div class="space-y-2">
+        <h3 class="font-bold text-4xl">{{ title }}</h3>
+        <p class="text-md">{{ description }}</p>
+      </div>
+    </div>
+  </li>
+  <!-- <div class="bg-transparent lg:w-2/5 sm:w-5/6 lg:h-48 sm:h-64 flex flex-col justify-center items-center">
     <div
       class="bg-gradient-to-r from-pink-500 to-rose-600 rounded-lg shadow-lg p-4 w-full h-full"
     >
@@ -16,36 +27,7 @@
         Source
       </a>
     </div>
-  </div>
-  <!-- <a
-    class="relative w-2/5 bg-gray-900 block p-6 rounded-lg max-w-sm mx-auto mt-24 -z-10"
-    href="#"
-  >
-    <span
-      class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
-    ></span>
-
-    <div class="my-4">
-      <h2 class="text-white text-2xl font-bold pb-2">{{ title }}</h2>
-      <p class="text-gray-300 py-1">{{ description }}</p>
-    </div>
-
-    <div class="flex justify-end">
-      <button
-        class="px-2 py-1 text-white border border-gray-200 font-semibold rounded hover:bg-gray-800"
-      >
-        Click Me
-      </button>
-    </div>
-  </a> -->
-
-  <!-- <li class="w-1/4 aspect-square rounded-lg gradient-border lg:min-w-48 hover:scale-[1.02]">
-    <a :href="url" target="_blank" class="w-full h-full text-white hover:text-white flex flex-col justify-around items-center">
-        <span class="text-lg">{{ title }}</span>
-        <img :src="icon" :alt="`${title} icon`" loading="lazy" class="w-24 h-24 aspect-square"/>
-        <span class="text-sm">{{ description }}</span>
-    </a>
-  </li> -->
+  </div> -->
 </template>
 
 <script setup lang="ts">
