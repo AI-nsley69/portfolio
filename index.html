@@ -25,7 +25,7 @@
     <!-- Meta content to support Discord embeds -->
     <meta content="Hello, I'm Ainsley!" property="og:title" />
     <meta content="Welcome to my portfolio :)" property="og:description" />
-    <meta content="https://portfolio.trainsley69.me" property="og:url" />
+    <meta content="https://portfolio.benji.foo" property="og:url" />
     <meta content="assets/icon.webp" property="og:image" />
     <meta content="#dcdcdc" data-react-helmet="true" name="theme-color" />
     <!-- AlpineJS import -->
@@ -111,7 +111,7 @@
           <input
             type="hidden"
             name="_url"
-            value="https://portfolio.trainsley69.me/contact"
+            value="https://portfolio.benji.foo/contact"
           />
           <input
             type="text"
@@ -142,7 +142,7 @@
         class="portfolio-list"
         x-show="page === 'portfolio'"
         x-data="{cards: []}"
-        x-init="fetch('https://portfolio.trainsley69.me/portfolio.json').then(response => response.json()).then(data => cards = data.cards)"
+        x-init="fetch('/portfolio.json').then(response => response.json()).then(data => cards = data.cards)"
         x-cloak
       >
         <!-- Each div with portfolio-div class becomes its own card for each project -->
