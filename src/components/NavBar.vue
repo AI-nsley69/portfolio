@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute left-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-neutral-700 px-2 rounded-xl"
+    class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-neutral-700 px-2 rounded-xl"
   >
     <!-- <div
       id="logo"

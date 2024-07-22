@@ -1,7 +1,6 @@
 <template>
     <section class="min-h-screen flex flex-col px-4 text-left">
-        <h2 class="text-2xl w-full text-left mb-4">Work Experience</h2>
-        <div class="w-1/5 fading-bottom-border mb-4"></div>
+        <PageHeader title="Experience" />
         <div class="container max-w-5xl px-4 py-12 mx-auto">
 			<div class="grid gap-4 mx-4 sm:grid-cols-12">
 				<div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
@@ -18,7 +17,14 @@
     </section>
 </template>
 <script setup lang="ts">
-import { onMounted, type Ref, ref } from 'vue';
+import { defineComponent, onMounted, type Ref, ref } from 'vue';
+import PageHeader from '../PageHeader.vue';
+
+defineComponent({
+    components: { 
+        PageHeader,
+    }
+})
 
 interface Experience {
     title: string,
@@ -51,10 +57,5 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.fading-bottom-border {
-  background:
-    linear-gradient(var(--primary), var(--primary)) padding-box,
-    linear-gradient(to right, rgba(255, 255, 255, 255) 0%, rgba(255, 255, 255, 255) 70%, rgba(255, 255, 255, 0) 100%) border-box;
-  border-bottom: 2px solid transparent;
-}
+
 </style>

@@ -1,7 +1,6 @@
 <template>
     <section class="min-h-screen h-max flex flex-col px-4">
-        <h2 class="text-2xl w-full text-left">Projects</h2>
-        <div class="w-1/5 fading-bottom-border mb-4"></div>
+        <PageHeader title="Projects" />
         <ul class="flex flex-row flex-wrap gap-4 w-full justify-center">
             <ProjectItem v-for="project in projects" :project="project" :key="project.url" />
         </ul>
@@ -11,10 +10,12 @@
 <script setup lang="ts">
 import { defineComponent, onMounted, ref, type Ref } from 'vue';
 import ProjectItem from '../ProjectItem.vue';
+import PageHeader from '../PageHeader.vue';
 
 defineComponent({
     components: {
         ProjectItem,
+        PageHeader,
     }
 })
 
