@@ -1,14 +1,16 @@
 <template>
   <li
-    class="md:p-8 lg:p-14 flex flex-col justify-center items-center rounded-md border-2 border-rose-800 m-2 h-64"
+    class="rounded-3xl p-px bg-gradient-to-tr from-rose-500 to-fuchsia-600 h-64 m-4 transition-colors duration-300 ease-in-out hover:bg-gradient-to-r"
   >
-    <div
-      class="w-14 h-14 rounded-full bg-transparent flex justify-center items-center"
-    >
-      <i :class="`${icon} text-4xl text-neutral-100`"></i>
+    <div class="bg-gradient-to-tr from-neutral-700 to-stone-800 md:p-8 lg:p-14 flex flex-col justify-center items-center w-full h-full rounded-3xl">
+      <div
+        class="w-14 h-14 rounded-full bg-transparent flex justify-center items-center"
+      >
+        <i :class="`${icon} text-4xl text-neutral-100`"></i>
+      </div>
+      <h3 class="mt-12 text-xl font-bold text-neutral-100">{{ title }}</h3>
+      <p class="mt-5 text-base text-gray-300">{{ description }}</p>
     </div>
-    <h3 class="mt-12 text-xl font-bold text-neutral-100">{{ title }}</h3>
-    <p class="mt-5 text-base text-gray-300">{{ description }}</p>
   </li>
 </template>
 
