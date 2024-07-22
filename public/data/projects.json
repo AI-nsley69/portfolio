@@ -3,37 +3,37 @@
         "title": "Nyasharp",
         "description": "Esoteric language written in C#",
         "url": "https://github.com/AI-nsley69/nyasharp",
-        "icon": "/logo.jpg"
+        "icon": "fa-brands fa-github"
     },
     {
         "title": "I Suck",
         "description": "Novice Minecraft tweaks",
         "url": "https://github.com/AI-nsley69/i-suck",
-        "icon": "/logo.jpg"
+        "icon": "fa-brands fa-github"
     },
     {
         "title": "imbed",
         "description": "Embed messages into images with encryption",
         "url": "https://github.com/AI-nsley69/imbed",
-        "icon": "/logo.jpg"
+        "icon": "fa-brands fa-github"
     },
     {
         "title": "Khaos Utils",
         "description": "A special-purpose Discord Bot written in Node.js for a Minecraft community",
         "url": "https://github.com/KhaosMC/khaos-utils",
-        "icon": "/logo.jpg"
+        "icon": "fa-brands fa-github"
     },
     {
         "title": "ZigBrot",
         "description": "A simple mandelbrot renderer with basic multi-threading",
         "url": "https://github.com/AI-nsley69/ZigBrot",
-        "icon": "/logo.jpg"
+        "icon": "fa-brands fa-github"
     },
     {
         "title": "MonoPew",
         "description": "Simple Space Invaders-like game written in MonoGame",
         "url": "https://github.com/AI-nsley69/MonoPew",
-        "icon": "/logo.jpg"
+        "icon": "fa-brands fa-github"
     }
 
 ]

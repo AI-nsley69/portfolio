@@ -13,21 +13,15 @@
       id="content"
       class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4"
     >
-      <img
-        src="/icons/person-digging.svg"
-        class="w-4/5 rounded-md filter-white cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
-        @click="triggerScroll('#work-experience')"
-      />
-      <img
-        src="/icons/briefcase.svg"
-        class="w-4/5 rounded-md filter-white cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
-        @click="triggerScroll('#projects')"
-      />
-      <img
-        src="/icons/gears.svg"
-        class="w-4/5 rounded-md filter-white cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
-        @click="triggerScroll('#skills')"
-      />
+    <span class="w-4/5 text-white text-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] hover:text-red-400" @click="triggerScroll('#work-experience')">
+        <i class="fa-solid fa-person-digging"></i>
+    </span>
+    <span class="w-4/5 text-white text-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] hover:text-red-400" @click="triggerScroll('#projects')">
+        <i class="fa-solid fa-briefcase"></i>
+    </span>
+    <span class="w-4/5 text-white text-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] hover:text-red-400" @click="triggerScroll('#skills')">
+        <i class="fa-solid fa-gears"></i>
+    </span>
     </div>
   </div>
 </template>
