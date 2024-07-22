@@ -1,7 +1,7 @@
 <template>
     <section class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden">
         <!-- Overlay -->
-         <Email />
+        <Email />
         <!-- Site components -->
         <Introduction id="home"/>
         <WorkExperience id="work-experience" />
