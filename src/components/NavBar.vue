@@ -2,13 +2,6 @@
   <div
     class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-neutral-700 px-2 rounded-xl"
   >
-    <!-- <div
-      id="logo"
-      class="flex flex-col items-center justify-center h-24 w-full gap-2 xl:gap-4"
-    >
-      <img src="/logo.jpg" alt="logo" class="h-full w-full rounded-md" />
-      <div class="border-b-2 border-solid border-gray-400 w-11/12"></div>
-    </div> -->
     <div
       id="content"
       class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4"
