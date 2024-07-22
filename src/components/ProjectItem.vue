@@ -1,6 +1,6 @@
 <template>
   <li
-    class="rounded-3xl p-px bg-gradient-to-tr from-rose-500 to-fuchsia-600 h-64 m-4 transition-colors duration-300 ease-in-out hover:bg-gradient-to-r"
+    class="rounded-3xl p-px bg-gradient-to-tr from-rose-500 to-fuchsia-600 h-64 m-4 transition duration-300 ease-in-out hover:bg-gradient-to-r hover:scale-[1.02] active:scale-[0.98]"
   >
     <div class="bg-gradient-to-tr from-neutral-700 to-stone-800 md:p-8 lg:p-14 flex flex-col justify-center items-center w-full h-full rounded-3xl">
       <div
