@@ -1,12 +1,5 @@
 <template>
-  <section id="#main" class="flex flex-col w-full min-h-screen lg:py-4 xl:py-8 gap-2">
-    <img
-      class="w-full fixed top-0 h-1/2 object-cover opacity-30"
-      id="bg-img"
-      src="/background.jpg"
-      alt="background"
-      loading="lazy"
-    />
+  <section class="flex flex-col w-full min-h-screen lg:py-4 xl:py-8 gap-2 bg-with-img">
     <h1 class="typewriter w-fit max-w-fit lg:text-xl xl:text-4xl">
       Hello, I'm Benjamin! 👋
     </h1>
@@ -24,12 +17,18 @@ const age = Math.floor(
 </script>
 
 <style scoped>
-#bg-img {
+.bg-with-img {
   --mask: linear-gradient(to bottom, var(--primary) 0, rgba(0, 0, 0, 0) 80%)
     100% 50% / 100% 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   z-index: -1;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
 }
 
 .typewriter {
