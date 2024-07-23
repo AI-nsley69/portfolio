@@ -31,7 +31,7 @@ interface IProp {
 }
 
 const { project } = defineProps<IProp>();
-const { url, description, title, icon } = project;
+const { /* url, */ description, title, icon } = project;
 </script>
 
 <style scoped>
