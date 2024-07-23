@@ -1,10 +1,15 @@
 <template>
-  <section class="flex flex-col w-full min-h-screen lg:py-4 xl:py-8 gap-2 bg-with-img">
+  <section
+    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-2 bg-with-img"
+  >
     <h1 class="typewriter w-fit max-w-fit lg:text-xl xl:text-4xl">
       Hello, I'm Benjamin! 👋
     </h1>
     <h2 class="text-lg xl:text-2xl">Software Engineer</h2>
     <h3>I'm a {{ age }} year old developer from Sweden.</h3>
+    <div
+      class="min-h-24 w-full bg-gradient-to-b from-transparent to-[#121212] bottom-0 mt-auto mb-0"
+    ></div>
   </section>
 </template>
 
@@ -18,16 +23,12 @@ const age = Math.floor(
 
 <style scoped>
 .bg-with-img {
-  --mask: linear-gradient(to bottom, var(--primary) 0, rgba(0, 0, 0, 0) 80%)
-    100% 50% / 100% 100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
   z-index: -1;
-  background-image: url('/background.jpg');
+  background-image: url("/backgrounds/introduction.jpg");
   background-size: cover;
   background-position: center;
-  
-/*  this is where the magic happens:  */
+
+  /*  this is where the magic happens:  */
   background-attachment: fixed;
 }
 
