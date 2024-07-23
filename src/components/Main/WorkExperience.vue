@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen flex flex-col px-4 text-left">
+    <section class="min-h-screen flex flex-col px-4 text-left bg-with-img">
         <PageHeader title="Experience" />
         <div class="container max-w-5xl px-4 py-12 mx-auto">
 			<div class="grid gap-4 mx-4 sm:grid-cols-12">
@@ -57,5 +57,17 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-
+.bg-with-img {
+  --mask: linear-gradient(to bottom, var(--primary) 0, rgba(0, 0, 0, 0) 80%)
+    100% 50% / 100% 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  z-index: -1;
+  background-image: url('/backgrounds/work.png');
+  background-size: cover;
+  background-position: center;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
 </style>
