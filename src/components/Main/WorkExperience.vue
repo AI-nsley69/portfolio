@@ -1,7 +1,9 @@
 <template>
   <section class="min-h-screen flex flex-col px-4 text-left bg-with-img">
     <PageHeader title="Experience" />
-    <div class="container max-w-5xl px-4 py-12 mx-auto">
+    <div
+      class="container max-w-5xl px-4 py-12 mx-auto bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-700 bg-opacity-80 rounded-lg"
+    >
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
           <div
