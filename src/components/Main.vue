@@ -1,15 +1,15 @@
 <template>
   <section
-    class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden"
+    class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white"
   >
     <!-- Overlay -->
     <Email />
     <!-- Site components -->
     <Introduction id="home" />
-    <div class="min-h-16 w-full bg-[#121212]"></div>
+    <div class="min-h-16 w-full bg-black"></div>
     <div class="pages">
       <div
-        class="min-h-24 w-full bg-gradient-to-b from-[#121212] to-transparent"
+        class="min-h-24 w-full bg-gradient-to-b from-black to-transparent"
       ></div>
       <WorkExperience id="work-experience" />
       <Projects id="projects" />

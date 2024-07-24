@@ -8,7 +8,7 @@
     <h2 class="text-lg xl:text-2xl">Software Engineer</h2>
     <h3>I'm a {{ age }} year old developer from Sweden.</h3>
     <div
-      class="min-h-24 w-full bg-gradient-to-b from-transparent to-[#121212] bottom-0 mt-auto mb-0"
+      class="min-h-24 w-full bg-gradient-to-b from-transparent to-black bottom-0 mt-auto mb-0"
     ></div>
   </section>
 </template>
