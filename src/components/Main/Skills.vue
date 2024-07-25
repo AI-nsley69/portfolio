@@ -38,7 +38,7 @@ const skills: Ref<Skill[]> = ref([
     description:
       "TypeScript is a superset of JavaScript that compiles to clean JavaScript output. It is designed for developing large applications and transpiling to JavaScript is one of its key features.",
     icon: "/skills/typescript.svg",
-    tags: ["Frontend", "Backend"],
+    tags: ["Programming", "Frontend", "Backend"],
   },
   {
     name: "CSS",
@@ -59,14 +59,14 @@ const skills: Ref<Skill[]> = ref([
     description:
       "Vue.js is a progressive JavaScript framework for building user interfaces. It is designed to be incrementally adoptable, with a strong emphasis on the view layer.",
     icon: "/skills/vue-js.svg",
-    tags: ["Frontend"],
+    tags: ["Frontend", "JavaScript"],
   },
   {
     name: "Tailwind CSS",
     description:
       "Tailwind CSS is a utility-first CSS framework that allows you to style your application without writing any new CSS. It provides a set of predefined utility classes that can be used to quickly build custom designs.",
     icon: "/skills/tailwind-css.svg",
-    tags: ["Frontend"],
+    tags: ["Frontend", "CSS"],
   },
 ]);
 </script>
