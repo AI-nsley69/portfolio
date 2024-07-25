@@ -21,7 +21,4 @@ defineComponent({
 onMounted(toggleDarkMode);
 </script>
 
-<style scoped>
-#main {
-}
-</style>
+<style scoped></style>

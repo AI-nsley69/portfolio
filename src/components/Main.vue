@@ -3,7 +3,8 @@
     class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white"
   >
     <!-- Overlay -->
-    <Email />
+    <EmailForm />
+    <EmailToggle />
     <!-- Site components -->
     <Introduction id="home" />
     <div class="min-h-16 w-full bg-black"></div>
@@ -22,7 +23,8 @@
 
 <script setup lang="ts">
 import { defineComponent, onMounted } from "vue";
-import Email from "./Email.vue";
+import EmailToggle from "./EmailToggle.vue";
+import EmailForm from "./EmailForm.vue";
 import Introduction from "./Main/Introduction.vue";
 import WorkExperience from "./Main/WorkExperience.vue";
 import Projects from "./Main/Projects.vue";
@@ -31,7 +33,8 @@ import Footer from "./Footer.vue";
 
 defineComponent({
   components: {
-    Email,
+    EmailToggle,
+    EmailForm,
     Introduction,
     WorkExperience,
     Projects,
@@ -41,14 +44,14 @@ defineComponent({
 });
 
 onMounted(() => {
-    const section = document.querySelector('.pages');
-    section?.classList.add('pages-lazy')
-})
+  const section = document.querySelector(".pages");
+  section?.classList.add("pages-lazy");
+});
 </script>
 
 <style scoped>
 .pages-lazy {
-    background-image: url("/backgrounds/pages.jpg");
+  background-image: url("/backgrounds/pages.jpg");
 }
 
 .pages {
