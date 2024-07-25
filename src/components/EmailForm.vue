@@ -40,13 +40,13 @@
               type="text"
               id="name"
               name="name"
-              class="peer bg-transparent h-10 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-rose-800 focus:ring-rose-600 focus:outline-none"
+              class="peer bg-transparent h-10 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-violet-600 focus:ring-violet-400 focus:outline-none"
               placeholder="Your Name"
               required
             />
             <label
               for="name"
-              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-rose-600 peer-focus:text-sm transition-all"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
               >Name</label
             >
           </div>
@@ -57,13 +57,13 @@
               type="email"
               id="email"
               name="email"
-              class="peer bg-transparent h-10 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-rose-800 focus:ring-rose-600 focus:outline-none"
+              class="peer bg-transparent h-10 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-violet-600 focus:ring-violet-400 focus:outline-none"
               placeholder="E-mail"
               required
             />
             <label
               for="email"
-              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-rose-600 peer-focus:text-sm transition-all"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
               >E-mail</label
             >
           </div>
@@ -74,20 +74,20 @@
               type="content"
               id="message"
               name="message"
-              class="peer bg-transparent h-48 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-rose-800 focus:ring-rose-600 focus:outline-none"
+              class="peer bg-transparent h-48 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-violet-600 focus:ring-violet-400 focus:outline-none"
               placeholder="Inquiry"
               required
             ></textarea>
             <label
               for="message"
-              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-rose-600 peer-focus:text-sm transition-all"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
               >Inquiry</label
             >
           </div>
           <div class="flex flex-row gap-2 justify-center w-full max-w-md">
             <button
               type="submit"
-              class="bg-black text-white px-4 py-2 rounded-lg w-full border-black border-2 hover:border-rose-800 active:border-rose-600"
+              class="bg-black text-white px-4 py-2 rounded-lg w-full border-black border-2 hover:border-violet-600 active:border-violet-400"
               @submit=""
             >
               Submit
