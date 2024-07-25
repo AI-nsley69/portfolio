@@ -5,12 +5,20 @@
     <!-- <img src="/backgrounds/introduction.jpg" loading="lazy" class="relative object-cover object-center top-0 h-screen" /> -->
     <div class="flex flex-col flex-1 justify-start items-center w-full">
       <div class="text-left w-full flex flex-row justify-center px-4 h-fit">
-        <h1 class="typewriter font-bold w-fit max-w-fit xl:text-6xl lg:text-2xl py-1 drop-shadow-2xl">
+        <h1
+          class="typewriter font-bold w-fit max-w-fit text-2xl xl:text-6xl py-1 drop-shadow-2xl"
+        >
           Hello, I'm Benjamin! 👋
         </h1>
       </div>
-      <h2 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-lime-500 to-lime-200 py-1 drop-shadow-lg">Software Engineer</h2>
-      <p class="text-xl text-neutral-300 animate-fade">I'm a {{ age }} year old developer from Sweden.</p>
+      <h2
+        class="text-xl xl:text-5xlfont-bold bg-clip-text text-transparent bg-gradient-to-r from-lime-500 to-lime-200 py-1 drop-shadow-lg"
+      >
+        Software Engineer
+      </h2>
+      <p class="text-md xl:text-xl text-neutral-300 animate-fade">
+        I'm a {{ age }} year old developer from Sweden.
+      </p>
     </div>
     <div
       class="min-h-24 w-full bg-gradient-to-b from-transparent to-black bottom-0 mt-auto mb-0"
@@ -19,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted } from "vue";
 
 const birthday = new Date(2004, 3, 7);
 const yearsInMilliseconds = 365 * 24 * 60 * 60 * 1000;
@@ -28,16 +36,16 @@ const age = Math.floor(
 );
 
 onMounted(() => {
-    setTimeout(() => {
-        const section = document.querySelector('.bg-with-img');
-        section?.classList.add('bg-with-img-lazy');
-    });
-})
+  setTimeout(() => {
+    const section = document.querySelector(".bg-with-img");
+    section?.classList.add("bg-with-img-lazy");
+  });
+});
 </script>
 
 <style scoped>
 .bg-with-img-lazy {
-    background-image: url("/backgrounds/introduction.jpg");
+  background-image: url("/backgrounds/introduction.jpg");
 }
 
 .bg-with-img {
