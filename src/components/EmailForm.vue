@@ -34,40 +34,56 @@
             name="_url"
             value="https://portfolio.benji.foo"
           />
-          <div class="flex flex-col text-left gap-2 w-full max-w-md">
-            <label for="name" class="text-neutral-300 text-xl">Name</label>
+          <div
+            class="relative flex flex-col text-left gap-2 w-full max-w-md my-1"
+          >
             <input
               type="text"
               id="name"
               name="name"
-              class="w-full rounded-md p-2 border-2 border-rose-800 bg-transparent outline-none focus:border-rose-500"
-              placeholder="Your name"
+              class="peer bg-transparent h-10 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-rose-800 focus:ring-rose-600 focus:outline-none"
+              placeholder="Your Name"
               required
             />
+            <label
+              for="name"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-rose-600 peer-focus:text-sm transition-all"
+              >Name</label
+            >
           </div>
-          <div class="flex flex-col text-left gap-2 w-full max-w-md">
-            <label for="email" class="text-neutral-300 text-xl">Email</label>
+          <div
+            class="relative flex flex-col text-left gap-2 w-full max-w-md my-1"
+          >
             <input
               type="email"
               id="email"
               name="email"
-              class="w-full rounded-md p-2 border-2 border-rose-800 bg-transparent outline-none focus:border-rose-500"
-              placeholder="Your email"
+              class="peer bg-transparent h-10 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-rose-800 focus:ring-rose-600 focus:outline-none"
+              placeholder="E-mail"
               required
             />
-          </div>
-          <div class="flex flex-col text-left gap-2 w-full max-w-md">
-            <label for="message" class="text-neutral-300 text-xl"
-              >Message</label
+            <label
+              for="email"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-rose-600 peer-focus:text-sm transition-all"
+              >E-mail</label
             >
+          </div>
+          <div
+            class="relative flex flex-col text-left gap-2 w-full max-w-md my-1"
+          >
             <textarea
               type="content"
               id="message"
               name="message"
-              class="w-full h-48 rounded-md p-2 border-2 border-rose-800 bg-transparent outline-none focus:border-rose-500"
-              placeholder="Your inquiry"
+              class="peer bg-transparent h-48 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-rose-800 focus:ring-rose-600 focus:outline-none"
+              placeholder="Inquiry"
               required
             ></textarea>
+            <label
+              for="message"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-rose-600 peer-focus:text-sm transition-all"
+              >Inquiry</label
+            >
           </div>
           <div class="flex flex-row gap-2 justify-center w-full max-w-md">
             <button
