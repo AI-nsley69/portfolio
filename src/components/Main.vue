@@ -50,8 +50,10 @@ defineComponent({
 });
 
 onMounted(() => {
-  const section = document.querySelector(".pages");
-  section?.classList.add("pages-lazy");
+  setTimeout(() => {
+    const section = document.querySelector(".pages");
+    section?.classList.add("pages-lazy");
+  });
 });
 </script>
 
