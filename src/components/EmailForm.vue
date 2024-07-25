@@ -8,8 +8,9 @@
       class="flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-neutral-800 rounded-xl p-4 gap-4"
     >
       <font-awesome-icon
-        :icon="['fas', 'xmark']"
-        class="text-white relative top-2 right-2"
+        :icon="['fas', 'x']"
+        class="text-white relative ml-auto right-2 cursor-pointer border-2 border-white/30 hover:border-rose-500 rounded-full p-2 w-4 h-4"
+        @click="store.toggleEmailForm()"
       />
       <h2 class="w-full font-bold text-2xl">Contact me! ✨</h2>
       <div
