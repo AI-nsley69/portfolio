@@ -1,5 +1,7 @@
 <template>
-  <h2 class="md:text-2xl lg:text-4xl w-full text-left mb-4 font-bold">
+  <h2
+    class="md:text-2xl lg:text-4xl w-full text-left mb-4 font-bold uppercase tracking-wider"
+  >
     {{ title }}
   </h2>
   <div
