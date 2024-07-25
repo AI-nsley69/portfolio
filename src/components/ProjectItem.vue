@@ -15,6 +15,7 @@
         :src="icon"
         class="w-full h-full object-cover col-span-2"
         loading="lazy"
+        :alt="`${title} project image`"
       />
 
       <div class="flex flex-col justify-start items-center col-span-3 gap-2">
@@ -27,7 +28,7 @@
             <a :href="url"
                 class="relative gap-2 inline-flex items-center justify-center p-2 text-lg font-bold text-white hover:text-white transition-all duration-200 bg-black font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-lg"
                 role="button">
-                <i class="fa-brands fa-github"></i>
+                <font-awesome-icon :icon="['fa-brands', 'github']" class="h-5" />
                 <span>Source</span>
             </a>
         </div>
