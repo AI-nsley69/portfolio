@@ -1,8 +1,8 @@
 <template>
-  <section class="min-h-screen flex flex-col px-4 text-left bg-with-img">
+  <section class="min-h-screen flex flex-col px-4 text-left bg-with-img w-full">
     <PageHeader title="Experience" />
     <div
-      class="container max-w-5xl px-4 py-12 mx-auto bg-gradient-to-r from-fuchsia-800 via-fuchsia-800 to-violet-700 bg-opacity-30 rounded-lg shadow-2xl"
+      class="container w-full px-4 py-12 mx-auto bg-gradient-to-r from-fuchsia-800 via-fuchsia-800 to-violet-700 bg-opacity-30 rounded-lg shadow-2xl"
     >
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">

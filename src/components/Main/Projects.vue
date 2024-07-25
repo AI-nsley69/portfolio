@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { defineComponent, ref, type Ref } from "vue";
-import ProjectItem from "../ProjectItem.vue";
+import ProjectItem from "../Project/ProjectItem.vue";
 import PageHeader from "../PageHeader.vue";
 
 defineComponent({

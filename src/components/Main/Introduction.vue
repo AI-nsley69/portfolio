@@ -1,9 +1,9 @@
 <template>
   <section
-    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 bg-with-img"
+    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 bg-with-img leading-4"
   >
     <!-- <img src="/backgrounds/introduction.jpg" loading="lazy" class="relative object-cover object-center top-0 h-screen" /> -->
-    <div class="flex flex-col flex-1 justify-start items-center w-full">
+    <div class="flex flex-col flex-1 justify-center items-center w-full gap-8">
       <div class="text-left w-full flex flex-row justify-center px-4 h-fit">
         <h1
           class="typewriter font-bold w-fit max-w-fit text-2xl xl:text-6xl py-1 drop-shadow-2xl"
