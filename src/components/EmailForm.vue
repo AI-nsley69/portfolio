@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="store.emailFormOpen"
-    class="absolute top-0 left-0 w-full h-full bg-black/50 z-[90] p-8 flex flex-col items-center justify-center"
+    class="absolute top-0 left-0 w-full h-full bg-black/80 z-[90] p-8 flex flex-col items-center justify-center"
     @click:outside="store.toggleEmailForm()"
   >
     <div
@@ -11,7 +11,7 @@
         class="absolute inset-0 bg-gradient-to-r from-fuchsia-800 to-violet-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-xl w-full max-w-6xl h-full ml-auto mr-auto"
       ></div>
       <div
-        class="relative flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-neutral-800 rounded-xl p-4 gap-4"
+        class="relative flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-neutral-800 rounded-xl p-4 gap-8"
       >
         <font-awesome-icon
           :icon="['fas', 'x']"
@@ -35,7 +35,7 @@
             value="https://portfolio.benji.foo"
           />
           <div
-            class="relative flex flex-col text-left gap-2 w-full max-w-md my-1"
+            class="relative flex flex-col text-left gap-2 w-full max-w-md my-2"
           >
             <input
               type="text"
@@ -52,7 +52,7 @@
             >
           </div>
           <div
-            class="relative flex flex-col text-left gap-2 w-full max-w-md my-1"
+            class="relative flex flex-col text-left gap-2 w-full max-w-md my-2"
           >
             <input
               type="email"
@@ -69,7 +69,7 @@
             >
           </div>
           <div
-            class="relative flex flex-col text-left gap-2 w-full max-w-md my-1"
+            class="relative flex flex-col text-left gap-2 w-full max-w-md my-2"
           >
             <textarea
               type="content"
