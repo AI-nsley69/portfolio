@@ -2,6 +2,7 @@
   <section
     class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 bg-with-img"
   >
+    <!-- <img src="/backgrounds/introduction.jpg" loading="lazy" class="relative object-cover object-center top-0 h-screen" /> -->
     <div class="flex flex-col flex-1 justify-start items-center w-full">
       <div class="text-left w-full flex flex-row justify-center px-4 h-fit">
         <h1 class="typewriter font-bold w-fit max-w-fit xl:text-6xl lg:text-2xl py-1 drop-shadow-2xl">
