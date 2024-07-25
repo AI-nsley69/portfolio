@@ -3,7 +3,9 @@
     class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white"
   >
     <!-- Overlay -->
-    <EmailForm />
+    <Transition name="fade">
+      <EmailForm v-if="store.emailFormOpen" />
+    </Transition>
     <EmailToggle />
     <!-- Site components -->
     <Introduction id="home" />
@@ -30,6 +32,10 @@ import WorkExperience from "./Main/WorkExperience.vue";
 import Projects from "./Main/Projects.vue";
 import Skills from "./Main/Skills.vue";
 import Footer from "./Footer.vue";
+
+import { useStore } from "../store";
+
+const store = useStore();
 
 defineComponent({
   components: {
@@ -66,5 +72,20 @@ section {
 }
 section::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
 }
 </style>

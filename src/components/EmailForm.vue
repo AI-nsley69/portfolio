@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="store.emailFormOpen"
     class="absolute top-0 left-0 w-full h-full bg-black/80 z-[90] p-8 flex flex-col items-center justify-center"
     @click:outside="store.toggleEmailForm()"
   >
@@ -88,7 +87,7 @@
           <div class="flex flex-row gap-2 justify-center w-full max-w-md">
             <button
               type="submit"
-              class="bg-black text-white px-4 py-2 rounded-lg w-full hover:border-rose-800 hover:border-2"
+              class="bg-black text-white px-4 py-2 rounded-lg w-full border-black border-2 hover:border-rose-800 active:border-rose-600"
               @submit=""
             >
               Submit
