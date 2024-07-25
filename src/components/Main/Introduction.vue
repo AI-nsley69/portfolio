@@ -1,12 +1,16 @@
 <template>
   <section
-    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-2 bg-with-img"
+    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 bg-with-img"
   >
-    <h1 class="typewriter w-fit max-w-fit lg:text-xl xl:text-4xl">
-      Hello, I'm Benjamin! 👋
-    </h1>
-    <h2 class="text-lg xl:text-2xl">Software Engineer</h2>
-    <h3>I'm a {{ age }} year old developer from Sweden.</h3>
+    <div class="flex flex-col flex-1 justify-start items-center w-full">
+      <div class="text-left w-full flex flex-row justify-center px-4 h-fit">
+        <h1 class="typewriter font-bold w-fit max-w-fit xl:text-6xl lg:text-2xl py-1 drop-shadow-2xl">
+          Hello, I'm Benjamin! 👋
+        </h1>
+      </div>
+      <h2 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-lime-500 to-lime-200 py-1 drop-shadow-lg">Software Engineer</h2>
+      <p class="text-xl text-neutral-300 animate-fade">I'm a {{ age }} year old developer from Sweden.</p>
+    </div>
     <div
       class="min-h-24 w-full bg-gradient-to-b from-transparent to-black bottom-0 mt-auto mb-0"
     ></div>
@@ -36,10 +40,9 @@ const age = Math.floor(
   overflow: hidden;
   border-right: 2px solid #fff;
   white-space: nowrap;
-  margin: 0 auto;
   letter-spacing: 0.1em;
   animation:
-    typewriter 4s steps(100, end),
+    typewriter 3s steps(100, end),
     blink-caret 0.75s step-end infinite;
 }
 
