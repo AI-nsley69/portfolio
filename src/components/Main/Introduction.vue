@@ -12,7 +12,7 @@
         </h1>
       </div>
       <h2
-        class="text-xl xl:text-5xlfont-bold bg-clip-text text-transparent bg-gradient-to-r from-lime-500 to-lime-200 py-1 drop-shadow-lg"
+        class="text-xl xl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-lime-500 to-lime-200 py-1 drop-shadow-lg"
       >
         Software Engineer
       </h2>
