@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted } from "vue";
 import Email from "./Email.vue";
 import Introduction from "./Main/Introduction.vue";
 import WorkExperience from "./Main/WorkExperience.vue";
@@ -39,16 +39,23 @@ defineComponent({
     Footer,
   },
 });
+
+onMounted(() => {
+    const section = document.querySelector('.pages');
+    section?.classList.add('pages-lazy')
+})
 </script>
 
 <style scoped>
+.pages-lazy {
+    background-image: url("/backgrounds/pages.jpg");
+}
+
 .pages {
-  background-image: url("/backgrounds/pages.jpg");
   background-size: cover;
   background-position: center;
 
   background-attachment: fixed;
-  background-blend-mode: overlay;
 }
 section {
   -ms-overflow-style: none; /* Internet Explorer 10+ */

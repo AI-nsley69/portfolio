@@ -19,17 +19,29 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
 const birthday = new Date(2004, 3, 7);
 const yearsInMilliseconds = 365 * 24 * 60 * 60 * 1000;
 const age = Math.floor(
   (new Date().getTime() - birthday.getTime()) / yearsInMilliseconds,
 );
+
+onMounted(() => {
+    setTimeout(() => {
+        const section = document.querySelector('.bg-with-img');
+        section?.classList.add('bg-with-img-lazy');
+    });
+})
 </script>
 
 <style scoped>
+.bg-with-img-lazy {
+    background-image: url("/backgrounds/introduction.jpg");
+}
+
 .bg-with-img {
   z-index: -1;
-  background-image: url("/backgrounds/introduction.jpg");
   background-size: cover;
   background-position: center;
 
