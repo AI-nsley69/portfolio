@@ -11,9 +11,6 @@
       />
       <div class="py-2">
         <div class="font-bold text-xl mb-2">{{ name }}</div>
-        <!-- <p class="text-gray-300 text-base">
-          {{ description }}
-        </p> -->
       </div>
       <div class="flex-1 min-h-1 w-full"></div>
       <div

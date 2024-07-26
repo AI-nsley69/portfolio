@@ -3,7 +3,6 @@
     class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 bg-with-img leading-4"
   >
     <div class="w-full flex flex-col flex-1 backdrop-blur-sm">
-      <!-- <img src="/backgrounds/introduction.jpg" loading="lazy" class="relative object-cover object-center top-0 h-screen" /> -->
       <div
         class="flex flex-col flex-1 justify-center items-center w-full gap-8"
       >
