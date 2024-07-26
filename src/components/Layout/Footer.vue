@@ -10,14 +10,14 @@
       <a
         href="https://unsplash.com"
         target="_blank"
-        class="text-neutral-300 hover:text-medium-carmine-400"
+        class="text-neutral-300 hover:text-punch-400"
         >Unsplash</a
       >
       <a
-        href="https://icons8.com"
+        href="https://techicons.dev/"
         target="_blank"
-        class="text-neutral-300 hover:text-medium-carmine-400"
-        >Icons8</a
+        class="text-neutral-300 hover:text-punch-400"
+        >Techicons</a
       >
     </div>
     <div class="col-span-3 border-x-2 border-cod-gray-700 w-full h-full"></div>
@@ -31,13 +31,13 @@
       <a
         href="https://vuejs.org/"
         target="_blank"
-        class="text-neutral-300 hover:text-medium-carmine-400"
+        class="text-neutral-300 hover:text-punch-400"
         >Vue.js</a
       >
       <a
         href="https://tailwindcss.com/"
         target="_blank"
-        class="text-neutral-300 hover:text-medium-carmine-400"
+        class="text-neutral-300 hover:text-punch-400"
         >Tailwind CSS</a
       >
     </div>

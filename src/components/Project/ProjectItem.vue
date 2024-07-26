@@ -3,7 +3,7 @@
     class="h-64 m-4 transition duration-300 ease-in-out hover:bg-gradient-to-r drop-shadow-xl"
   >
     <div
-      class="bg-gradient-to-t from-cod-gray-700 to-cod-gray-800 grid grid-cols-5 w-full h-full rounded-3xl overflow-hidden"
+      class="bg-gradient-to-t from-amethyst-700 to-amethyst-800 grid grid-cols-5 w-full h-full rounded-3xl overflow-hidden transition duration-300 ease-in-out hover:scale-[1.02]"
     >
       <img
         :src="icon"
@@ -13,10 +13,12 @@
       />
 
       <div class="flex flex-col justify-start items-center col-span-3 gap-2">
-        <h3 class="mt-12 text-3xl font-bold text-medium-carmine-600">
+        <h3
+          class="mt-12 text-3xl font-bold text-punch-600 uppercase tracking-wider"
+        >
           {{ title }}
         </h3>
-        <p class="mt-5 text-base text-neutral-400">{{ description }}</p>
+        <p class="mt-5 text-base text-neutral-300">{{ description }}</p>
         <a
           :href="url"
           target="_blank"

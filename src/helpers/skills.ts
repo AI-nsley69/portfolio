@@ -1,50 +1,191 @@
 import { ref, type Ref } from "vue";
 
 export interface Skill {
-	name: string;
-	icon: string;
-	tags: string[];
+  name: string;
+  icon: string;
 }
 
-export const skills: Ref<Skill[]> = ref([
-	{
-		name: "JavaScript",
-		icon: "/skills/javascript.svg",
-		tags: ["Programming", "Frontend", "Backend"],
-	},
-	{
-		name: "TypeScript",
-		icon: "/skills/typescript.svg",
-		tags: ["Programming", "Frontend", "Backend"],
-	},
-	{
-		name: "CSS",
-		icon: "/skills/css.svg",
-		tags: ["Frontend"],
-	},
-	{
-		name: "HTML",
-		icon: "/skills/html.svg",
-		tags: ["Frontend"],
-	},
-	{
-		name: "Vue.js",
-		icon: "/skills/vue-js.svg",
-		tags: ["Frontend", "JavaScript"],
-	},
-	{
-		name: "Tailwind CSS",
-		icon: "/skills/tailwind-css.svg",
-		tags: ["Frontend", "CSS"],
-	},
-    {
-        name: "C#",
-        icon: "/skills/c-sharp.svg",
-        tags: ["Programming", "Backend", "CLI"]
-    },
-    {
-        name: "Java",
-        icon: "/skills/java.svg",
-        tags: ["Programming", "Minecraft mods"]
-    }
+export interface SkillGroup {
+  name: string;
+  skills: Skill[];
+}
+
+const programming: Skill[] = [
+  {
+    name: "JavaScript",
+    icon: "/skills/javascript.svg",
+  },
+  {
+    name: "TypeScript",
+    icon: "/skills/typescript.svg",
+  },
+  {
+    name: "CSS",
+    icon: "/skills/css.svg",
+  },
+  {
+    name: "HTML",
+    icon: "/skills/html.svg",
+  },
+  {
+    name: "C#",
+    icon: "/skills/c-sharp.svg",
+  },
+  {
+    name: "Java",
+    icon: "/skills/java.svg",
+  },
+  {
+    name: "Zig",
+    icon: "/skills/zig.svg",
+  },
+  {
+    name: "Python",
+    icon: "/skills/python.svg",
+  },
+  {
+    name: "Bash",
+    icon: "/skills/bash.svg",
+  },
+];
+
+const web: Skill[] = [
+  {
+    name: "Node.js",
+    icon: "/skills/nodejs.svg",
+  },
+  {
+    name: "ESLint",
+    icon: "/skills/eslint.svg",
+  },
+  {
+    name: "Vue.js",
+    icon: "/skills/vue-js.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/skills/tailwind-css.svg",
+  },
+  {
+    name: "Cypress",
+    icon: "/skills/cypress.svg",
+  },
+  {
+    name: "Express.js",
+    icon: "/skills/express-js.svg",
+  },
+  {
+    name: "Discord.js",
+    icon: "/skills/discord-js.svg",
+  },
+];
+
+const hosting: Skill[] = [
+  {
+    name: "Docker",
+    icon: "/skills/docker.svg",
+  },
+  {
+    name: "Kubernetes",
+    icon: "/skills/kubernetes.svg",
+  },
+  {
+    name: "ArgoCD",
+    icon: "/skills/argocd.svg",
+  },
+  {
+    name: "Helm",
+    icon: "/skills/helm.svg",
+  },
+  {
+    name: "Cloudflare",
+    icon: "/skills/cloudflare.svg",
+  },
+  {
+    name: "Linux",
+    icon: "/skills/linux.svg",
+  },
+  {
+    name: "Debian",
+    icon: "/skills/debian.svg",
+  },
+  {
+    name: "Windows",
+    icon: "/skills/windows.svg",
+  },
+  {
+    name: "Grafana",
+    icon: "/skills/grafana.svg",
+  },
+  {
+    name: "Jenkins",
+    icon: "/skills/jenkins.svg",
+  },
+  {
+    name: "pfSense",
+    icon: "/skills/pfsense.svg",
+  },
+  {
+    name: "openSSH",
+    icon: "/skills/ssh.svg",
+  },
+];
+
+const misc: Skill[] = [
+  {
+    name: "Git",
+    icon: "/skills/git.svg",
+  },
+  {
+    name: "Bitbucket",
+    icon: "/skills/bitbucket.svg",
+  },
+  {
+    name: "GitHub",
+    icon: "/skills/github.svg",
+  },
+  {
+    name: "Jira",
+    icon: "/skills/jira.svg",
+  },
+  {
+    name: "MySQL",
+    icon: "/skills/mysql.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "/skills/mongodb.svg",
+  },
+  {
+    name: "Redis",
+    icon: "/skills/redis.svg",
+  },
+
+  {
+    name: "VS Code",
+    icon: "/skills/vscode.svg",
+  },
+  {
+    name: "nginx",
+    icon: "/skills/nginx.svg",
+  },
+];
+
+export const skills = ref([
+  {
+    name: "Programming",
+    skills: programming,
+  },
+  {
+    name: "Web & JS Technologies",
+    skills: web,
+  },
+  {
+    name: "Hosting & DevOps",
+    skills: hosting,
+  },
+  {
+    name: "Miscellaneous",
+    skills: misc,
+  },
 ]);

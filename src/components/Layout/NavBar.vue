@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-gradient-to-b from-medium-carmine-700 to-medium-carmine-500 px-2 rounded-box z-50 border-2 border-medium-carmine-800"
+    class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-gradient-to-b from-punch-700 to-punch-600 px-2 rounded-box z-50 border-2 border-punch-800"
   >
     <div
       id="content"
@@ -8,17 +8,17 @@
     >
       <font-awesome-icon
         :icon="['fas', 'person-digging']"
-        class="w-4/5 text-white text-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] hover:text-red-400"
+        class="w-4/5 text-white text-xl cursor-pointer hover:scale-110 active:scale-90 hover:text-electric-violet-400 transition duration-300 ease-in-out"
         @click="triggerScroll('#work-experience')"
       />
       <font-awesome-icon
         :icon="['fas', 'briefcase']"
-        class="w-4/5 text-white text-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] hover:text-red-400"
+        class="w-4/5 text-white text-xl cursor-pointer hover:scale-110 active:scale-90 hover:text-electric-violet-400 transition duration-300 ease-in-out"
         @click="triggerScroll('#projects')"
       />
       <font-awesome-icon
         :icon="['fas', 'gears']"
-        class="w-4/5 text-white text-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] hover:text-red-400"
+        class="w-4/5 text-white text-xl cursor-pointer hover:scale-110 active:scale-90 hover:text-electric-violet-400 transition duration-300 ease-in-out"
         @click="triggerScroll('#skills')"
       />
     </div>
