@@ -1,8 +1,10 @@
 <template>
   <li class="px-3 py-3">
-    <div class="flex flex-col max-w-sm overflow-hidden rounded-lg w-36 h-36">
+    <div
+      class="flex flex-col max-w-sm overflow-hidden rounded-lg w-fit min-w-24 h-24"
+    >
       <img
-        class="h-24 mx-auto"
+        class="h-16 mx-auto"
         :src="icon"
         :alt="`${name} skill icon`"
         loading="lazy"

@@ -49,7 +49,7 @@ const programming: Skill[] = [
   },
 ];
 
-const web: Skill[] = [
+const toolsFrameworks: Skill[] = [
   {
     name: "Node.js",
     icon: "/skills/nodejs.svg",
@@ -77,6 +77,42 @@ const web: Skill[] = [
   {
     name: "Discord.js",
     icon: "/skills/discord-js.svg",
+  },
+  {
+    name: "Git",
+    icon: "/skills/git.svg",
+  },
+  {
+    name: "Bitbucket",
+    icon: "/skills/bitbucket.svg",
+  },
+  {
+    name: "GitHub",
+    icon: "/skills/github.svg",
+  },
+  {
+    name: "Jira",
+    icon: "/skills/jira.svg",
+  },
+  {
+    name: "MySQL",
+    icon: "/skills/mysql.svg",
+  },
+  {
+    name: "SQlite",
+    icon: "/skills/sqlite.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "/skills/mongodb.svg",
+  },
+  {
+    name: "Redis",
+    icon: "/skills/redis.svg",
+  },
+  {
+    name: "VS Code",
+    icon: "/skills/vscode.svg",
   },
 ];
 
@@ -129,47 +165,13 @@ const hosting: Skill[] = [
     name: "openSSH",
     icon: "/skills/ssh.svg",
   },
-];
-
-const misc: Skill[] = [
-  {
-    name: "Git",
-    icon: "/skills/git.svg",
-  },
-  {
-    name: "Bitbucket",
-    icon: "/skills/bitbucket.svg",
-  },
-  {
-    name: "GitHub",
-    icon: "/skills/github.svg",
-  },
-  {
-    name: "Jira",
-    icon: "/skills/jira.svg",
-  },
-  {
-    name: "MySQL",
-    icon: "/skills/mysql.svg",
-  },
-  {
-    name: "MongoDB",
-    icon: "/skills/mongodb.svg",
-  },
-  {
-    name: "Redis",
-    icon: "/skills/redis.svg",
-  },
-
-  {
-    name: "VS Code",
-    icon: "/skills/vscode.svg",
-  },
   {
     name: "nginx",
     icon: "/skills/nginx.svg",
   },
 ];
+
+// const misc: Skill[] = [];
 
 export const skills = ref([
   {
@@ -177,15 +179,15 @@ export const skills = ref([
     skills: programming,
   },
   {
-    name: "Web & JS Technologies",
-    skills: web,
+    name: "Tools & Frameworks",
+    skills: toolsFrameworks,
   },
   {
     name: "Hosting & DevOps",
     skills: hosting,
   },
-  {
-    name: "Miscellaneous",
-    skills: misc,
-  },
+  //   {
+  //     name: "Miscellaneous",
+  //     skills: misc,
+  //   },
 ]);
