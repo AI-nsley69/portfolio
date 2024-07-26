@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute bottom-2 right-2 w-12 h-12 bg-white cursor-pointer rounded-lg flex flex-col items-center justify-center p-1"
+    class="absolute bottom-2 right-2 w-12 h-12 xl:w-14 xl:h-14  bg-white cursor-pointer rounded-lg flex flex-col items-center justify-center p-1"
   >
     <!-- Icon -->
     <font-awesome-icon
