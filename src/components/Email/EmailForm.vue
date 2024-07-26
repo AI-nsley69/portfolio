@@ -7,7 +7,7 @@
       class="relative w-[90%] h-4/5 flex flex-col items-center justify-center"
     >
       <div
-        class="absolute inset-0 bg-gradient-to-r from-fuchsia-800 to-violet-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-xl w-full max-w-6xl h-full ml-auto mr-auto"
+        class="absolute inset-0 bg-gradient-to-r from-electric-violet-700 to-blue-violet-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-xl w-full max-w-6xl h-full ml-auto mr-auto"
       ></div>
       <div
         class="relative flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-cod-gray-900 rounded-xl p-4 gap-8"
