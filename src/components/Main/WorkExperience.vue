@@ -2,7 +2,7 @@
   <section class="min-h-screen flex flex-col px-4 text-left bg-with-img w-full">
     <PageHeader title="Experience" />
     <div
-      class="container w-full px-4 py-12 mx-auto bg-gradient-to-r from-fuchsia-800 via-fuchsia-800 to-violet-700 bg-opacity-30 rounded-lg shadow-2xl"
+      class="container w-full px-4 py-12 mx-auto bg-gradient-to-r from-electric-violet-800 via-electric-violet-800 to-blue-violet-700 rounded-lg shadow-2xl"
     >
       <div class="grid gap-4 mx-4 sm:grid-cols-12 mr-8">
         <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">

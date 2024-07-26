@@ -1,7 +1,7 @@
 <template>
   <li class="px-3 py-3">
     <div
-      class="flex flex-col max-w-sm rounded-lg overflow-hidden shadow-lg bg-gradient-to-tr from-fuchsia-700 to-violet-600 w-72 h-64"
+      class="flex flex-col max-w-sm rounded-lg overflow-hidden shadow-lg bg-gradient-to-t from-electric-violet-700 to-blue-violet-600 w-72 h-64"
     >
       <img
         class="w-24 mx-auto"

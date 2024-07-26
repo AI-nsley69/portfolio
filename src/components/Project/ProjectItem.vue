@@ -3,7 +3,7 @@
     class="rounded-3xl p-[2px] bg-gradient-to-tr from-rose-500 to-fuchsia-600 h-64 m-4 transition duration-300 ease-in-out hover:bg-gradient-to-r drop-shadow-xl"
   >
     <div
-      class="bg-gradient-to-tr from-neutral-600 to-stone-800 grid grid-cols-5 w-full h-full rounded-3xl overflow-hidden"
+      class="bg-gradient-to-t from-cod-gray-700 to-cod-gray-800 grid grid-cols-5 w-full h-full rounded-3xl overflow-hidden"
     >
 
       <img

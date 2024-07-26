@@ -10,7 +10,7 @@
         class="absolute inset-0 bg-gradient-to-r from-fuchsia-800 to-violet-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-xl w-full max-w-6xl h-full ml-auto mr-auto"
       ></div>
       <div
-        class="relative flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-neutral-800 rounded-xl p-4 gap-8"
+        class="relative flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-cod-gray-900 rounded-xl p-4 gap-8"
       >
         <font-awesome-icon
           :icon="['fas', 'x']"
@@ -46,7 +46,7 @@
             />
             <label
               for="name"
-              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-cod-gray-900 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
               >Name</label
             >
           </div>
@@ -63,7 +63,7 @@
             />
             <label
               for="email"
-              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-cod-gray-900 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
               >E-mail</label
             >
           </div>
@@ -80,7 +80,7 @@
             ></textarea>
             <label
               for="message"
-              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-neutral-800 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-cod-gray-900 mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-violet-400 peer-focus:text-sm transition-all"
               >Inquiry</label
             >
           </div>
