@@ -37,4 +37,14 @@ export const skills: Ref<Skill[]> = ref([
 		icon: "/skills/tailwind-css.svg",
 		tags: ["Frontend", "CSS"],
 	},
+    {
+        name: "C#",
+        icon: "/skills/c-sharp.svg",
+        tags: ["Programming", "Backend", "CLI"]
+    },
+    {
+        name: "Java",
+        icon: "/skills/java.svg",
+        tags: ["Programming", "Minecraft mods"]
+    }
 ]);
