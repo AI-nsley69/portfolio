@@ -30,19 +30,14 @@
 </template>
 
 <script setup lang="ts">
-interface Skill {
-  name: string;
-  description: string;
-  icon: string;
-  tags: string[];
-}
+import type { Skill } from '../../helpers/skills';
 
 interface IProp {
   skill: Skill;
 }
 
 const { skill } = defineProps<IProp>();
-const { name, description, icon, tags } = skill;
+const { name, icon, tags } = skill;
 </script>
 
 <style scoped></style>
