@@ -2,7 +2,7 @@
   <section class="min-h-screen flex flex-col px-4">
     <PageHeader title="Skills" />
     <div
-      class="w-full h-full flex flex-col justify-start items-center gap-16 mr-8"
+      class="w-full h-full flex flex-col justify-space items-center sm:gap-4 lg:gap-8 mr-8 sm:my-4 lg:my-8"
     >
       <SkillGroup
         v-for="skillGroup in skills"
