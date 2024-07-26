@@ -1,7 +1,7 @@
 <template>
   <section class="min-h-screen flex flex-col px-4">
     <PageHeader title="Skills" />
-    <ul class="flex flex-row flex-wrap gap-4 mt-10 text-center">
+    <ul class="flex flex-row flex-wrap justify-center gap-4 mt-10 text-center">
       <SkillItem v-for="skill in skills" :skill="skill" :key="skill.name" />
     </ul>
   </section>

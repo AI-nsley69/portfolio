@@ -4,7 +4,7 @@
     <div
       class="container w-full px-4 py-12 mx-auto bg-gradient-to-r from-fuchsia-800 via-fuchsia-800 to-violet-700 bg-opacity-30 rounded-lg shadow-2xl"
     >
-      <div class="grid gap-4 mx-4 sm:grid-cols-12">
+      <div class="grid gap-4 mx-4 sm:grid-cols-12 mr-8">
         <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
           <div
             class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300"
@@ -78,7 +78,7 @@ function periodToString(period: Experience["period"]): string {
   return `${startString} - ${endString}`;
 }
 
-let workExperience: Ref<Experience[]> = ref([]);
+const workExperience: Ref<Experience[]> = ref([]);
 onMounted(async () => {
   const res = await fetch("/data/work-experience.json");
   if (!res.ok) return;
