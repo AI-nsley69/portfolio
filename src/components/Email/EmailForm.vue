@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute top-0 left-0 w-full h-full bg-black/80 z-[90] p-8 flex flex-col items-center justify-center"
+    class="absolute top-0 left-0 w-full h-full bg-cod-gray-950/80 z-[90] p-8 flex flex-col items-center justify-center"
     @click:outside="store.toggleEmailForm()"
   >
     <div
@@ -87,7 +87,7 @@
           <div class="flex flex-row gap-2 justify-center w-full max-w-md">
             <button
               type="submit"
-              class="bg-black text-white px-4 py-2 rounded-lg w-full border-black border-2 hover:border-violet-600 active:border-violet-400"
+              class="bg-cod-gray-950 text-white px-4 py-2 rounded-lg w-full border-cod-gray-950 border-2 hover:border-violet-600 active:border-violet-400"
               @submit=""
             >
               Submit

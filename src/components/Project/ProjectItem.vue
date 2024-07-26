@@ -23,7 +23,7 @@
           <a
             :href="url"
             target="_blank"
-            class="relative gap-2 inline-flex items-center justify-center p-2 text-lg font-bold text-white hover:text-white transition-all duration-200 bg-black font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-lg"
+            class="relative gap-2 inline-flex items-center justify-center p-2 text-lg font-bold text-white hover:text-white transition-all duration-200 bg-cod-gray-950 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-lg"
             role="button"
           >
             <font-awesome-icon :icon="['fa-brands', 'github']" class="h-5" />

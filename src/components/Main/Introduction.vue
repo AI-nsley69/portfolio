@@ -23,7 +23,7 @@
         </p>
       </div>
       <div
-        class="min-h-24 w-full bg-gradient-to-b from-transparent to-black bottom-0 mt-auto mb-0"
+        class="min-h-24 w-full bg-gradient-to-b from-transparent to-cod-gray-950 bottom-0 mt-auto mb-0"
       ></div>
     </div>
   </section>

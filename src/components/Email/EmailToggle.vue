@@ -4,7 +4,7 @@
   >
     <font-awesome-icon
       :icon="['fa', 'envelope']"
-      class="text-black w-4/5 h-4/5"
+      class="text-cod-gray-950 w-4/5 h-4/5"
       @click="store.toggleEmailForm()"
     />
   </div>

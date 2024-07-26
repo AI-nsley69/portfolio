@@ -1,5 +1,5 @@
 <template>
   <footer
-    class="flex flex-col items-center justify-center gap-4 bg-black min-h-64 w-full"
+    class="flex flex-col items-center justify-center gap-4 bg-cod-gray-950 min-h-64 w-full"
   ></footer>
 </template>
