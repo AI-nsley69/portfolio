@@ -25,10 +25,6 @@ defineComponent({
     PageHeader,
   },
 });
-
-
-
-
 </script>
 
 <style scoped>
