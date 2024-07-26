@@ -1,11 +1,10 @@
 <template>
   <li
-    class="rounded-3xl p-[2px] bg-electric-violet-700 h-64 m-4 transition duration-300 ease-in-out hover:bg-gradient-to-r drop-shadow-xl"
+    class="rounded-3xl p-[2px] bg-amethyst-700 h-64 m-4 transition duration-300 ease-in-out hover:bg-gradient-to-r drop-shadow-xl"
   >
     <div
       class="bg-gradient-to-t from-cod-gray-700 to-cod-gray-800 grid grid-cols-5 w-full h-full rounded-3xl overflow-hidden"
     >
-
       <img
         :src="icon"
         class="w-full h-full object-center object-cover col-span-2"
@@ -36,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Project } from '../../helpers/projects';
+import type { Project } from "../../helpers/projects";
 
 interface IProp {
   project: Project;

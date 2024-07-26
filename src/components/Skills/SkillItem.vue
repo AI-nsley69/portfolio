@@ -1,8 +1,6 @@
 <template>
   <li class="px-3 py-3">
-    <div
-      class="flex flex-col max-w-sm overflow-hidden rounded-lg w-36 h-36"
-    >
+    <div class="flex flex-col max-w-sm overflow-hidden rounded-lg w-36 h-36">
       <img
         class="w-24 mx-auto"
         :src="icon"
@@ -18,7 +16,7 @@
       >
         <span
           v-for="tag in tags"
-          class="inline-block bg-white rounded-full text-sm font-semibold text-blue-violet-500 p-2"
+          class="inline-block bg-white rounded-full text-sm font-semibold text-electric-violet-500 p-2"
           >#{{ tag }}</span
         >
       </div> -->
@@ -27,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Skill } from '../../helpers/skills';
+import type { Skill } from "../../helpers/skills";
 
 interface IProp {
   skill: Skill;
