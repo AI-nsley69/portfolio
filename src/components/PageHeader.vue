@@ -1,6 +1,6 @@
 <template>
   <h2
-    class="md:text-3xl lg:text-5xl w-full text-left mb-4 font-bold uppercase tracking-wider"
+    class="md:text-4xl lg:text-5xl w-full text-left mb-4 font-bold uppercase tracking-wider"
   >
     {{ title }}
   </h2>
