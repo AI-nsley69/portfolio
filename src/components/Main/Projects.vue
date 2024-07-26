@@ -74,29 +74,4 @@ const projects: Ref<Project[]> = ref([
 </script>
 
 <style scoped>
-.fading-bottom-border {
-  background:
-    linear-gradient(var(--primary), var(--primary)) padding-box,
-    linear-gradient(
-        to right,
-        rgba(255, 255, 255, 255) 0%,
-        rgba(255, 255, 255, 255) 70%,
-        rgba(255, 255, 255, 0) 100%
-      )
-      border-box;
-  border-bottom: 2px solid transparent;
-}
-
-/* .bg-with-img {
-  background-image: url("/backgrounds/projects.webp");
-  background-size: cover;
-  background-position: center;
-
-  background-attachment: fixed;
-
-  --mask: linear-gradient(to bottom, var(--primary) 0, rgba(0, 0, 0, 0) 80%)
-    100% 50% / 100% 100% repeat-x;
-  mask-image: var(--mask);
-  -webkit-mask-image: var(--mask);
-} */
 </style>

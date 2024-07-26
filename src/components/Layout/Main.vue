@@ -24,14 +24,16 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineAsyncComponent, defineComponent, onMounted } from "vue";
 import EmailToggle from "../Email/EmailToggle.vue";
-import EmailForm from "../Email/EmailForm.vue";
 import Introduction from "../Main/Introduction.vue";
-import WorkExperience from "../Main/WorkExperience.vue";
-import Projects from "../Main/Projects.vue";
-import Skills from "../Main/Skills.vue";
 import Footer from "./Footer.vue";
+
+const EmailForm = defineAsyncComponent(() => import("../Email/EmailForm.vue"));
+
+const WorkExperience = defineAsyncComponent(() => import('../Main/WorkExperience.vue'));
+const Projects = defineAsyncComponent(() => import('../Main/Projects.vue'));
+const Skills = defineAsyncComponent(() => import("../Main/Skills.vue"));
 
 import { useStore } from "../../store";
 

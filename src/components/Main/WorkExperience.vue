@@ -88,16 +88,4 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/* .bg-with-img {
-  background-image: url("/backgrounds/projects.webp");
-  background-size: cover;
-  background-position: center;
-
-  background-attachment: fixed;
-
-  --mask: linear-gradient(to bottom, var(--primary) 0, rgba(0, 0, 0, 0) 80%)
-    100% 50% / 100% 100% repeat-x;
-  mask-image: var(--mask);
-  -webkit-mask-image: var(--mask);
-} */
 </style>
