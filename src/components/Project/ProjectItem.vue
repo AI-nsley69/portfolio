@@ -5,11 +5,6 @@
     <div
       class="bg-gradient-to-tr from-neutral-600 to-stone-800 grid grid-cols-5 w-full h-full rounded-3xl overflow-hidden"
     >
-      <!-- <div
-        class="w-14 h-14 rounded-full bg-transparent flex justify-center items-center"
-      >
-        <i :class="`${icon} text-4xl text-neutral-100`"></i>
-      </div> -->
 
       <img
         :src="icon"
@@ -41,12 +36,7 @@
 </template>
 
 <script setup lang="ts">
-interface Project {
-  title: string;
-  description: string;
-  url: string;
-  icon: string;
-}
+import type { Project } from '../../helpers/projects';
 
 interface IProp {
   project: Project;
