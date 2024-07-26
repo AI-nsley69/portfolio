@@ -18,7 +18,7 @@
       >
         <span
           v-for="tag in tags"
-          class="inline-block bg-white rounded-full text-sm font-semibold text-violet-600 p-2"
+          class="inline-block bg-white rounded-full text-sm font-semibold text-blue-violet-500 p-2"
           >#{{ tag }}</span
         >
       </div>
