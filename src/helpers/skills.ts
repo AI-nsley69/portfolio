@@ -75,6 +75,10 @@ const toolsFrameworks: Skill[] = [
     icon: "/skills/express-js.svg",
   },
   {
+    name: "Nuxt.js",
+    icon: "/skills/nuxt.svg",
+  },
+  {
     name: "Discord.js",
     icon: "/skills/discord-js.svg",
   },

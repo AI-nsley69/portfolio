@@ -4,13 +4,15 @@
       class="flex flex-col max-w-sm overflow-hidden rounded-lg w-fit min-w-24 h-24"
     >
       <img
-        class="h-16 mx-auto"
+        class="h-16 mx-auto drop-shadow-lg"
         :src="icon"
         :alt="`${name} skill icon`"
         loading="lazy"
       />
       <div class="py-2">
-        <div class="font-bold text-xl mb-2 text-neutral-300">{{ name }}</div>
+        <div class="font-bold text-xl mb-2 text-neutral-300 drop-shadow-md">
+          {{ name }}
+        </div>
       </div>
       <!-- <div class="flex-1 min-h-1 w-full"></div>
       <div
