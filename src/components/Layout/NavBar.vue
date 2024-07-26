@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-gradient-to-b from-guardsman-red-700 to-guardsman-red-500 px-2 rounded-xl z-50 border-2 border-guardsman-red-800"
+    class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-gradient-to-b from-medium-carmine-700 to-medium-carmine-500 px-2 rounded-box z-50 border-2 border-medium-carmine-800"
   >
     <div
       id="content"

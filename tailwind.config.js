@@ -1,4 +1,5 @@
 import colors from "tailwindcss/colors";
+import daisyui from "daisyui";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -39,24 +40,25 @@ export default {
         400: "#a673ff",
         500: "#8d3bff",
         600: "#8414ff",
-        700: "#7000f0",
+        700: "#6f00ee",
         800: "#6401d6",
         900: "#5303af",
         950: "#320077",
       },
-      "guardsman-red": {
-        50: "#ffefef",
-        100: "#ffdcdc",
-        200: "#ffbfbf",
-        300: "#ff9292",
-        400: "#ff5454",
-        500: "#ff1f1f",
-        600: "#ff0000",
-        700: "#db0000",
-        800: "#bd0000",
-        900: "#940808",
-        950: "#520000",
+      "medium-carmine": {
+        50: "#fcf4f4",
+        100: "#f9e8e7",
+        200: "#f5d4d3",
+        300: "#eeb5b3",
+        400: "#e28a87",
+        500: "#d36460",
+        600: "#af413d",
+        700: "#9f3a36",
+        800: "#843330",
+        900: "#6f2f2d",
+        950: "#3b1514",
       },
+
       white: "#faf9f6",
     },
     extend: {
@@ -74,5 +76,19 @@ export default {
       }),
     },
   },
-  plugins: [import("daisyui")],
+  plugins: [daisyui],
+
+  daisyui: {
+    themes: [
+      {
+        custom: {
+          primary: "#9966cc",
+          secondary: "#6f00ee",
+          accent: "#bd0000",
+          "base-100": "#121212",
+          neutral: "#faf9f6",
+        },
+      },
+    ],
+  },
 };

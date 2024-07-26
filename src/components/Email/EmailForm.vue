@@ -9,7 +9,7 @@
       <div
         class="absolute inset-0 bg-gradient-to-r from-amethyst-700 to-electric-violet-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-xl w-full max-w-6xl h-full ml-auto mr-auto"
       ></div>
-      <div
+      <dialog
         class="relative flex flex-col justify-space items-center w-full max-w-6xl h-full z-[100] bg-cod-gray-900 rounded-xl p-4 gap-8"
       >
         <font-awesome-icon
@@ -94,7 +94,7 @@
             </button>
           </div>
         </form>
-      </div>
+      </dialog>
     </div>
   </div>
 </template>
