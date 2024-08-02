@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 bg-with-img leading-4"
+    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 leading-4"
   >
     <div class="w-full flex flex-col flex-1 backdrop-blur-sm">
       <div
@@ -22,44 +22,19 @@
           I'm a {{ age }} year old developer from Sweden.
         </p>
       </div>
-      <div
-        class="min-h-24 w-full bg-gradient-to-b from-transparent to-cod-gray-950 bottom-0 mt-auto mb-0"
-      ></div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
-
 const birthday = new Date(2004, 3, 7);
 const yearsInMilliseconds = 365 * 24 * 60 * 60 * 1000;
 const age = Math.floor(
   (new Date().getTime() - birthday.getTime()) / yearsInMilliseconds,
 );
-
-onMounted(() => {
-  setTimeout(() => {
-    const section = document.querySelector(".bg-with-img");
-    section?.classList.add("bg-with-img-lazy");
-  });
-});
 </script>
 
 <style scoped>
-.bg-with-img-lazy {
-  background-image: url("/backgrounds/introduction.jpg");
-}
-
-.bg-with-img {
-  z-index: -1;
-  background-size: cover;
-  background-position: center;
-
-  /*  this is where the magic happens:  */
-  background-attachment: fixed;
-}
-
 .typewriter {
   overflow: hidden;
   border-right: 2px solid #fff;

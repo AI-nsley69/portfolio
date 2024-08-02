@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white"
+    class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white bg-with-img"
   >
     <!-- Overlay -->
     <Transition name="fade">
@@ -9,11 +9,7 @@
     <EmailToggle />
     <!-- Site components -->
     <Introduction id="home" />
-    <div class="min-h-16 w-full bg-cod-gray-950"></div>
-    <div class="pages">
-      <div
-        class="min-h-24 w-full bg-gradient-to-b from-cod-gray-950 to-transparent"
-      ></div>
+    <div class="my-8">
       <WorkExperience id="work-experience" />
       <Projects id="projects" />
       <Skills id="skills" />
@@ -53,23 +49,25 @@ defineComponent({
 
 onMounted(() => {
   setTimeout(() => {
-    const section = document.querySelector(".pages");
-    section?.classList.add("pages-lazy");
+    const section = document.querySelector(".bg-with-img");
+    section?.classList.add("bg-with-img-lazy");
   });
 });
 </script>
 
 <style scoped>
-.pages-lazy {
+.bg-with-img-lazy {
   background-image: url("/backgrounds/pages.jpg");
 }
 
-.pages {
+.bg-with-img {
   background-size: cover;
   background-position: center;
 
+  /*  this is where the magic happens:  */
   background-attachment: fixed;
 }
+
 section {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
