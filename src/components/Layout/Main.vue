@@ -9,7 +9,7 @@
     <EmailToggle />
     <!-- Site components -->
     <Introduction id="home" />
-    <div class="my-8">
+    <div class=" py-8 bg-gradient-to-t from-black via-black/90 to-black/40">
       <WorkExperience id="work-experience" />
       <Projects id="projects" />
       <Skills id="skills" />
