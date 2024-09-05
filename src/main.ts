@@ -1,5 +1,5 @@
-import { createApp } from "vue";
 import "./style.css";
+import type { App } from "vue";
 // FontAwesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { addIcons } from "./helpers/fontAwesome";
@@ -8,10 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { createPinia } from "pinia";
 const pinia = createPinia();
 
-import App from "./App.vue";
-
-const app = createApp(App);
-
 addIcons(library);
 
-app.component("font-awesome-icon", FontAwesomeIcon).use(pinia).mount("#app");
+export default (app: App) => {
+    app.component("font-awesome-icon", FontAwesomeIcon).use(pinia);
+}

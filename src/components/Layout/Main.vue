@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white bg-with-img"
+    class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white bg-with-img-lazy"
   >
     <!-- Overlay -->
     <Transition name="fade">

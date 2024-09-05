@@ -1,13 +1,13 @@
-const darkMode = {
-  primary: "#121212",
-  secondary: "#121212",
-  outline: "#242424",
-  accent: "#800000",
-  text: "#ffffff",
-};
+// const darkMode = {
+//   primary: "#121212",
+//   secondary: "#121212",
+//   outline: "#242424",
+//   accent: "#800000",
+//   text: "#ffffff",
+// };
 
-export function toggleDarkMode() {
-  for (const [key, value] of Object.entries(darkMode)) {
-    document.documentElement.style.setProperty(`--${key}`, value);
-  }
-}
+// export function toggleDarkMode() {
+//   for (const [key, value] of Object.entries(darkMode)) {
+//     document.documentElement.style.setProperty(`--${key}`, value);
+//   }
+// }

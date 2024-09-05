@@ -78,13 +78,24 @@ function periodToString(period: Experience["period"]): string {
   return `${startString} - ${endString}`;
 }
 
-const workExperience: Ref<Experience[]> = ref([]);
-onMounted(async () => {
-  const res = await fetch("/data/work-experience.json");
-  if (!res.ok) return;
-
-  workExperience.value = await res.json();
-});
+const workExperience: Ref<Experience[]> = ref([
+    {
+        "title": "Solutions Specialist",
+        "company": "Flowbird Group",
+        "period": {
+            "start": 1714521600000,
+            "end": null
+        }
+    },
+    {
+        "title": "Junior Fullstack Engineer",
+        "company": "Customer First AB",
+        "period": {
+            "start": 1688169600000,
+            "end": 1714089600000
+        }
+    }
+]);
 </script>
 
 <style scoped></style>

@@ -1,0 +1,29 @@
+---
+import Navbar from "../components/Layout/NavBar.vue";
+import Main from "../components/Layout/Main.vue";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <!-- Embed support -->
+        <meta content="Benji's Portfolio" property="og:title" />
+        <meta content="Hello!" property="og:description" />
+        <meta content="https://portfolio.benji.foo" property="og:url" />
+        <meta content="/icon.jpg" property="og:image" />
+        <meta content="#dcdcdc" data-react-helmet="true" name="theme-color" />
+	</head>
+	<body>
+		<main class="flex flex-row h-screen w-screen">
+            <Navbar />
+            <Main />
+        </main>
+	</body>
+</html>

@@ -4,7 +4,7 @@
   >
     <div
       id="content"
-      class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4"
+      class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4" client:only="vue"
     >
       <font-awesome-icon
         :icon="['fas', 'person-digging']"
