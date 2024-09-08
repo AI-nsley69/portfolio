@@ -2,6 +2,7 @@
   <div
     class="absolute top-0 left-0 w-full h-full bg-cod-gray-950/80 z-[90] p-8 flex flex-col items-center justify-center"
     @click:outside="store.toggleEmailForm()"
+    v-if="store.emailFormOpen"
   >
     <div
       class="relative w-[90%] h-4/5 flex flex-col items-center justify-center"

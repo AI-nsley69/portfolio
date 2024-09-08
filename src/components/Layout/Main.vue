@@ -4,9 +4,8 @@
   >
     <!-- Overlay -->
     <Transition name="fade">
-      <EmailForm v-if="store.emailFormOpen" />
+      <EmailForm v-if="store.emailFormOpen" client:load />
     </Transition>
-    <EmailToggle />
     <!-- Site components -->
     <Introduction id="home" />
     <div class=" py-8 bg-gradient-to-t from-black via-black/90 to-black/40">
@@ -21,11 +20,8 @@
 
 <script setup lang="ts">
 import { defineAsyncComponent, defineComponent, onMounted } from "vue";
-import EmailToggle from "../Email/EmailToggle.vue";
 import Introduction from "../Main/Introduction.vue";
 import Footer from "./Footer.vue";
-
-const EmailForm = defineAsyncComponent(() => import("../Email/EmailForm.vue"));
 
 const WorkExperience = defineAsyncComponent(() => import('../Main/WorkExperience.vue'));
 const Projects = defineAsyncComponent(() => import('../Main/Projects.vue'));
@@ -37,8 +33,6 @@ const store = useStore();
 
 defineComponent({
   components: {
-    EmailToggle,
-    EmailForm,
     Introduction,
     WorkExperience,
     Projects,
