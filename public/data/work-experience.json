@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Solutions Specialist",
+        "company": "Flowbird Group",
+        "period": {
+            "start": 1714521600000,
+            "end": null
+        }
+    },
+    {
+        "title": "Junior Fullstack Engineer",
+        "company": "Customer First AB",
+        "period": {
+            "start": 1688169600000,
+            "end": 1714089600000
+        }
+    }
+]
