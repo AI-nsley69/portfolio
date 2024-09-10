@@ -24,7 +24,7 @@
         ></div>
         <form
           target="_blank"
-          action="https://formsubmit.co/af08eb4d77ce09e8b586dd8bbfa2756b"
+          action="https://formsubmit.co/0ae1a832962f11e170e19b8b83abed87"
           method="POST"
           class="flex flex-col justify-space items-center w-full gap-4"
           @submit.capture="handleSubmit"
