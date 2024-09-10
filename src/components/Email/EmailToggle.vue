@@ -1,10 +1,10 @@
 <template>
   <div
-    class="absolute bottom-2 right-2 w-12 h-12 xl:w-14 xl:h-14  bg-white cursor-pointer rounded-lg flex flex-col items-center justify-center p-1 z-10"
+    class="fixed bottom-2 right-2 w-12 h-12 xl:w-14 xl:h-14 bg-white cursor-pointer rounded-lg flex flex-col items-center justify-center p-1 z-10"
   >
     <font-awesome-icon
       :icon="['fa', 'envelope']"
-      class="text-cod-gray-950 w-4/5 h-4/5"
+      class="text-charcoal-950 w-4/5 h-4/5"
       @click="store.toggleEmailForm()"
     />
   </div>

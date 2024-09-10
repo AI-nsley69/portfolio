@@ -1,5 +1,5 @@
 <template>
-  <footer class="grid grid-cols-5 gap-4 bg-cod-gray-950 min-h-64 w-full p-4">
+  <footer class="grid grid-cols-5 gap-4 bg-charcoal-950 min-h-64 w-full p-4">
     <Left />
     <Main />
     <Right />

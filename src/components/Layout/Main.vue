@@ -2,13 +2,9 @@
   <section
     class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white bg-with-img-lazy"
   >
-    <!-- Overlay -->
-    <Transition name="fade">
-      <EmailForm v-if="store.emailFormOpen" client:load />
-    </Transition>
     <!-- Site components -->
     <Introduction id="home" />
-    <div class=" py-8 bg-gradient-to-t from-black via-black/90 to-black/40">
+    <div class="py-8 bg-gradient-to-t from-black via-black/90 to-black/20">
       <WorkExperience id="work-experience" />
       <Projects id="projects" />
       <Skills id="skills" />
@@ -23,8 +19,10 @@ import { defineAsyncComponent, defineComponent, onMounted } from "vue";
 import Introduction from "../Main/Introduction.vue";
 import Footer from "./Footer.vue";
 
-const WorkExperience = defineAsyncComponent(() => import('../Main/WorkExperience.vue'));
-const Projects = defineAsyncComponent(() => import('../Main/Projects.vue'));
+const WorkExperience = defineAsyncComponent(
+  () => import("../Main/WorkExperience.vue")
+);
+const Projects = defineAsyncComponent(() => import("../Main/Projects.vue"));
 const Skills = defineAsyncComponent(() => import("../Main/Skills.vue"));
 
 import { useStore } from "../../store";
@@ -55,11 +53,6 @@ onMounted(() => {
 }
 
 .bg-with-img {
-  background-size: cover;
-  background-position: center;
-
-  /*  this is where the magic happens:  */
-  background-attachment: fixed;
 }
 
 section {

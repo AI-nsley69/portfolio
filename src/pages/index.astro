@@ -1,8 +1,14 @@
 ---
 import Navbar from "../components/Layout/NavBar.vue";
-import Main from "../components/Layout/Main.vue";
+// import Main from "../components/Layout/Main.vue";
 import EmailToggle from "../components/Email/EmailToggle.vue";
 import EmailForm from "../components/Email/EmailForm.vue";
+
+import Introduction from "../components/Main/Introduction.vue";
+import WorkExperience from "../components/Main/WorkExperience.vue";
+import Projects from "../components/Main/Projects.vue";
+import Skills from "../components/Main/Skills.vue";
+import Footer from "../components/Layout/Footer.vue";
 ---
 
 <html lang="en">
@@ -25,10 +31,35 @@ import EmailForm from "../components/Email/EmailForm.vue";
     <meta content="/icon.jpg" property="og:image" />
     <meta content="#dcdcdc" data-react-helmet="true" name="theme-color" />
   </head>
-  <body class="flex flex-row h-screen w-screen">
-    <Navbar client:load />
-    <Main />
-    <EmailToggle client:load />
-    <EmailForm v-if="store.emailFormOpen" client:load />
+  <body>
+      <!-- Site components -->
+    <main class="flex flex-1 flex-col justify-start overflow-y-scroll overflow-x-hidden text-white min-h-screen min-w-screen bg-with-img">
+      <Introduction id="home" />
+      <!-- Page components -->
+      <!-- <div class="py-8 flex flex-col justify-start bg-gradient-to-t from-black via-black/90 to-black/40"> -->
+      <div class="py-8 flex flex-col justify-start bg-black/40">
+
+        <WorkExperience id="work-experience" />
+        <Projects id="projects" />
+        <Skills id="skills" />
+      </div>
+      <!-- Footer -->
+      <Footer />
+
+      <EmailToggle client:load />
+      <EmailForm client:load />
+      <Navbar client:load />
+    </main>
   </body>
 </html>
+
+<style>
+  .bg-with-img {
+    background-image: url("/backgrounds/pages.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+  }
+</style>

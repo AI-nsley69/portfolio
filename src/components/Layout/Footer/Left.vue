@@ -4,18 +4,18 @@
   >
     <span class="uppercase tracking-wider font-bold">Assets</span>
     <div
-      class="w-3/5 h-[2px] bg-gradient-to-r from-transparent via-cod-gray-600 to-transparent mb-4"
+      class="w-3/5 h-[2px] bg-gradient-to-r from-transparent via-charcoal-600 to-transparent mb-4"
     ></div>
     <a
       href="https://unsplash.com"
       target="_blank"
-      class="text-neutral-300 hover:text-punch-400"
+      class="text-neutral-300 hover:text-screamin-green-400"
       >Unsplash</a
     >
     <a
       href="https://techicons.dev/"
       target="_blank"
-      class="text-neutral-300 hover:text-punch-400"
+      class="text-neutral-300 hover:text-screamin-green-400"
       >Techicons</a
     >
   </div>

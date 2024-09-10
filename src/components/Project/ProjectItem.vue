@@ -14,7 +14,7 @@
 
       <div class="flex flex-col justify-start items-center col-span-3 gap-2">
         <h3
-          class="mt-12 text-3xl font-bold text-punch-600 uppercase tracking-wider"
+          class="mt-12 text-3xl font-bold text-screamin-green-500 uppercase tracking-wider"
         >
           {{ title }}
         </h3>
@@ -46,8 +46,7 @@ const { url, description, title, icon } = project;
 
 <style scoped>
 .gradient-border {
-  background:
-    linear-gradient(var(--primary), var(--primary)) padding-box,
+  background: linear-gradient(var(--primary), var(--primary)) padding-box,
     linear-gradient(135deg, darkorchid, var(--accent)) border-box;
   border: 2px solid transparent;
 }

@@ -1,10 +1,11 @@
 <template>
   <div
-    class="absolute right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-gradient-to-b from-punch-700 to-punch-600 px-2 rounded-box z-50 border-2 border-punch-800"
+    class="fixed right-2 top-1/2 bottom-1/2 m-auto w-12 h-fit bg-gradient-to-b from-screamin-green-700 to-screamin-green-600 px-2 rounded-box z-50 border-2 border-screamin-green-800"
   >
     <div
       id="content"
-      class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4" client:only="vue"
+      class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4"
+      client:only="vue"
     >
       <font-awesome-icon
         :icon="['fas', 'person-digging']"
