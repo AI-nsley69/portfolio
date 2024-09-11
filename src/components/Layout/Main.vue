@@ -25,10 +25,6 @@ const WorkExperience = defineAsyncComponent(
 const Projects = defineAsyncComponent(() => import("../Main/Projects.vue"));
 const Skills = defineAsyncComponent(() => import("../Main/Skills.vue"));
 
-import { useStore } from "../../store";
-
-const store = useStore();
-
 defineComponent({
   components: {
     Introduction,
