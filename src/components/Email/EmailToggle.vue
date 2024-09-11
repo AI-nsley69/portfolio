@@ -2,6 +2,7 @@
   <a
     href="#email-form"
     class="fixed bottom-2 right-2 w-12 h-12 xl:w-14 xl:h-14 bg-white cursor-pointer rounded-lg flex flex-col items-center justify-center p-2 z-10"
+    alt="Toggle email form"
   >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->

@@ -5,11 +5,11 @@
     <div
       id="content"
       class="flex flex-col items-center justify-center py-2 lg:py-4 gap-4"
-      client:only="vue"
     >
       <a
         href="#work-experience"
         class="w-4/5 text-white text-xl cursor-pointer hover:scale-110 active:scale-90 hover:text-electric-violet-400 transition duration-300 ease-in-out"
+        alt="Work experience"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -22,6 +22,7 @@
       <a
         href="/#projects"
         class="w-4/5 text-white text-xl cursor-pointer hover:scale-110 active:scale-90 transition duration-300 ease-in-out"
+        alt="Projects"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -34,6 +35,7 @@
       <a
         href="/#skills"
         class="w-4/5 text-white text-xl cursor-pointer hover:scale-110 active:scale-90 hover:text-electric-violet-400 transition duration-300 ease-in-out"
+        alt="Skills"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
