@@ -51,8 +51,8 @@ import Footer from "../components/Layout/Footer.vue";
       <!-- Footer -->
       <Footer />
 
-      <EmailToggle client:load />
-      <EmailForm client:load />
+      <EmailToggle />
+      <EmailForm id="email-form" />
       <Navbar />
     </main>
   </body>
@@ -66,5 +66,15 @@ import Footer from "../components/Layout/Footer.vue";
 
     /*  this is where the magic happens:  */
     background-attachment: fixed;
+  }
+
+  #email-form {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  #email-form:target {
+    pointer-events: all;
+    opacity: 1;
   }
 </style>

@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="flex flex-col w-full min-h-screen lg:pt-4 xl:pt-8 gap-4 leading-4"
-  >
+  <section class="flex flex-col w-full min-h-screen gap-4 leading-4">
     <div class="w-full flex flex-col flex-1 backdrop-blur-sm">
       <div
         class="flex flex-col flex-1 justify-center items-center w-full gap-8"
@@ -30,7 +28,7 @@
 const birthday = new Date(2004, 3, 7);
 const yearsInMilliseconds = 365 * 24 * 60 * 60 * 1000;
 const age = Math.floor(
-  (new Date().getTime() - birthday.getTime()) / yearsInMilliseconds,
+  (new Date().getTime() - birthday.getTime()) / yearsInMilliseconds
 );
 </script>
 
@@ -40,9 +38,7 @@ const age = Math.floor(
   border-right: 2px solid #fff;
   white-space: nowrap;
   letter-spacing: 0.1em;
-  animation:
-    typewriter 3s steps(100, end),
-    blink-caret 0.75s step-end infinite;
+  animation: typewriter 3s steps(100, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typewriter {
