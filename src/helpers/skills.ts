@@ -63,6 +63,10 @@ const toolsFrameworks: Skill[] = [
     icon: "/skills/vue-js.svg",
   },
   {
+    name: "Vite.js",
+    icon: "/skills/vite.js.svg",
+  },
+  {
     name: "Tailwind CSS",
     icon: "/skills/tailwind-css.svg",
   },
@@ -122,6 +126,10 @@ const toolsFrameworks: Skill[] = [
 
 const hosting: Skill[] = [
   {
+    name: "systemd",
+    icon: "/skills/systemd.png"
+  },
+  {
     name: "Docker",
     icon: "/skills/docker.svg",
   },
@@ -142,6 +150,10 @@ const hosting: Skill[] = [
     icon: "/skills/cloudflare.svg",
   },
   {
+    name: "Crowdsec",
+    icon: "/skills/crowdsec.png"
+  },
+  {
     name: "Linux",
     icon: "/skills/linux.svg",
   },
@@ -156,6 +168,10 @@ const hosting: Skill[] = [
   {
     name: "Grafana",
     icon: "/skills/grafana.svg",
+  },
+  {
+    name: "LibreNMS",
+    icon: "/skills/librenms.png",
   },
   {
     name: "Jenkins",
@@ -173,6 +189,10 @@ const hosting: Skill[] = [
     name: "nginx",
     icon: "/skills/nginx.svg",
   },
+  {
+    name: "Tailscale",
+    icon: "/skills/tailscale.png"
+  }
 ];
 
 // const misc: Skill[] = [];

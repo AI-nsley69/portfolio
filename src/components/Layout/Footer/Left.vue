@@ -18,5 +18,11 @@
       class="text-neutral-300 hover:text-screamin-green-400"
       >Techicons</a
     >
+    <a
+      href="https://brandfetch.com/"
+      target="_blank"
+      class="text-neutral-300 hover:text-screamin-green-400"
+      >Brandfetch</a
+    >
   </div>
 </template>
