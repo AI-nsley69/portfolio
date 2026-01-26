@@ -35,21 +35,13 @@
 <script setup lang="ts">
 import { defineComponent, onMounted, type Ref, ref } from "vue";
 import PageHeader from "../PageHeader.vue";
+import { type Experience, workExperience } from "../../helpers/workExperience";
 
 defineComponent({
   components: {
     PageHeader,
   },
 });
-
-interface Experience {
-  title: string;
-  company: string;
-  period: {
-    start: number;
-    end: number | null;
-  };
-}
 
 const monthNames = [
   "January",
@@ -77,25 +69,6 @@ function periodToString(period: Experience["period"]): string {
 
   return `${startString} - ${endString}`;
 }
-
-const workExperience: Ref<Experience[]> = ref([
-    {
-        "title": "Solutions Specialist",
-        "company": "Flowbird Group",
-        "period": {
-            "start": 1714521600000,
-            "end": null
-        }
-    },
-    {
-        "title": "Junior Fullstack Engineer",
-        "company": "Customer First AB",
-        "period": {
-            "start": 1688169600000,
-            "end": 1714089600000
-        }
-    }
-]);
 </script>
 
 <style scoped></style>
