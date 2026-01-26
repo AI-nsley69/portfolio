@@ -1,8 +1,8 @@
 <template>
-  <section class="min-h-screen h-max flex flex-col px-4 bg-with-img">
+  <section class="min-h-screen h-max flex flex-col px-4 bg-with-img mt-10 sm:mt-16 xl:mt-24">
     <PageHeader title="Projects" />
     <ul
-      class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24 mr-8"
+      class="grid grid-cols-1 text-center sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 mr-8"
     >
       <ProjectItem
         v-for="project in projects"

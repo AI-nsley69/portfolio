@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex flex-col px-4">
+  <section class="min-h-screen flex flex-col px-4 mt-10 sm:mt-16 xl:mt-24">
     <PageHeader title="Skills" />
     <div
       class="w-full h-full flex flex-col justify-space items-center gap-8 mr-8 sm:my-4 lg:my-8"
