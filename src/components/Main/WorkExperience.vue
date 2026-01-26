@@ -13,18 +13,19 @@
               v-for="experience in workExperience"
               class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-rose-700"
             >
-              <h3 class="text-xl font-semibold tracking-wide">
+              <h3 class="text-xl font-semibold tracking-wide text-neutral-300" >
                 {{ experience.title }}, {{ experience.company }}
               </h3>
               <time
                 class="text-xs tracking-wide uppercase dark:text-gray-300"
                 >{{ periodToString(experience.period) }}</time
               >
-              <p class="mt-3">
-                Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc
-                ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget
-                egestas sodales.
-              </p>
+              <ul class="mt-3">
+                <li v-for="work in experience.work" class="flex flex-row justify-start align-text-top ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="h-5 pt-1 fill-neutral-300 mr-2"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                  <p class="text-md text-neutral-300" >{{ work }}</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
