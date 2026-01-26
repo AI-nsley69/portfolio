@@ -40,6 +40,10 @@ const programming: Skill[] = [
     icon: "/skills/zig.svg",
   },
   {
+    name: "Go",
+    icon: "/skills/go.svg",
+  },
+  {
     name: "Python",
     icon: "/skills/python.svg",
   },
@@ -127,7 +131,7 @@ const toolsFrameworks: Skill[] = [
 const hosting: Skill[] = [
   {
     name: "systemd",
-    icon: "/skills/systemd.png"
+    icon: "/skills/systemd.png",
   },
   {
     name: "Docker",
@@ -151,7 +155,11 @@ const hosting: Skill[] = [
   },
   {
     name: "Crowdsec",
-    icon: "/skills/crowdsec.png"
+    icon: "/skills/crowdsec.png",
+  },
+  {
+    name: "Fail2ban",
+    icon: "/skills/fail2ban.png",
   },
   {
     name: "Linux",
@@ -160,6 +168,10 @@ const hosting: Skill[] = [
   {
     name: "Debian",
     icon: "/skills/debian.svg",
+  },
+  {
+    name: "Proxmox",
+    icon: "/skills/proxmox.png",
   },
   {
     name: "Windows",
@@ -191,8 +203,8 @@ const hosting: Skill[] = [
   },
   {
     name: "Tailscale",
-    icon: "/skills/tailscale.png"
-  }
+    icon: "/skills/tailscale.png",
+  },
 ];
 
 // const misc: Skill[] = [];
