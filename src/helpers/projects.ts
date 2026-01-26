@@ -9,6 +9,12 @@ export interface Project {
 
 export const projects: Ref<Project[]> = ref([
     {
+      title: "zScript",
+      description: "Yet another programming language with a register-based VM written from scratch",
+      url: "https://github.com/AI-nsley69/zScript",
+      icon: "/projects/zscript.jpg"
+    },
+    {
       title: "Nyasharp",
       description: "Esoteric language written in C#",
       url: "https://github.com/AI-nsley69/nyasharp",
